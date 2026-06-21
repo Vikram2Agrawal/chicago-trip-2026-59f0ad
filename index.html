@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Chicago · July 2–5, 2026 · The Agrawal Family</title>
+<meta name="description" content="A comfort-first, vegetarian, four-day Chicago itinerary for America's 250th — built around the Obama Center and the 4th of July." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --navy:#0B2545; --navy2:#13315C; --blue:#3A7CA5; --sky:#41B6E6; --red:#C8102E;
+  --cream:#FBF7EF; --paper:#FFFFFF; --ink:#1A2230; --muted:#5B6675; --line:#E7E0D4;
+  --gold:#C9962B; --green:#2E7D52; --amber:#B26A00; --violet:#6D5BD0; --teal:#2C7A7B;
+  --shadow:0 1px 2px rgba(16,24,40,.06), 0 8px 24px rgba(16,24,40,.08);
+  --shadow-lg:0 24px 60px rgba(11,37,69,.22);
+  --r:18px; --r-sm:12px; --maxw:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; scroll-padding-top:64px}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);
+  background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,h4{font-family:Fraunces,Georgia,serif;line-height:1.12;margin:0;font-weight:600;letter-spacing:-.01em}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible,input:focus-visible,.daytab:focus-visible{outline:3px solid var(--sky);outline-offset:2px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:0;z-index:100;background:var(--navy);color:#fff;padding:11px 18px;border-radius:0 0 10px 0;font-weight:600}
+.skip:focus{left:0}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.eyebrow{font-family:Inter;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.72rem;color:var(--blue)}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:50;background:rgba(251,247,239,.86);backdrop-filter:saturate(180%) blur(12px);
+  border-bottom:1px solid var(--line)}
+.nav .row{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:.95rem;color:var(--navy)}
+.brand .stars{color:var(--red);letter-spacing:2px}
+.navlinks{display:flex;gap:22px;align-items:center}
+.navlinks a{color:var(--navy);font-weight:500;font-size:.9rem}
+.navlinks a:hover{color:var(--blue);text-decoration:none}
+.menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:1.1rem;cursor:pointer}
+
+/* HERO */
+.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(1.05) brightness(.82)}
+.hero .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,37,69,.42) 0%,rgba(11,37,69,.18) 38%,rgba(11,37,69,.86) 100%)}
+.hero .inner{position:relative;padding:0 0 56px;max-width:var(--maxw);margin:0 auto;width:100%}
+.hero .inner .pad{padding:0 20px}
+.hero .flagline{display:inline-flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  font-size:.74rem;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:7px 14px;border-radius:999px}
+.hero h1{font-size:clamp(3rem,9vw,6.4rem);font-weight:700;margin:.32em 0 .12em;line-height:.98}
+.hero .sub{font-size:clamp(1.05rem,2.4vw,1.4rem);max-width:40ch;color:#f3f0ea;font-weight:400}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:26px;font-weight:500}
+.hero .meta b{font-weight:700}
+.hero .meta .dot{opacity:.5}
+
+/* WEATHER STRIP */
+.wxstrip{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:30px}
+.wx{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:12px 14px;backdrop-filter:blur(4px)}
+.wx .d{font-weight:700;font-size:.82rem;letter-spacing:.04em}
+.wx .t{font-family:Fraunces;font-size:1.5rem;font-weight:600;margin-top:2px}
+.wx .lo{opacity:.8;font-size:.8rem}
+.wx .ic{font-size:1.15rem}
+
+/* SECTIONS */
+section{padding:74px 0}
+section.tight{padding:54px 0}
+.sec-head{max-width:62ch}
+.sec-head h2{font-size:clamp(1.9rem,4.4vw,2.9rem);margin:.18em 0 .35em}
+.sec-head p{color:var(--muted);font-size:1.06rem;margin:0}
+.alt{background:linear-gradient(180deg,#fff, #FDFBF7);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+
+/* OVERVIEW cards */
+.grid{display:grid;gap:18px}
+.g4{grid-template-columns:repeat(4,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden}
+.card .pad{padding:20px 22px}
+.wow{display:flex;gap:14px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;box-shadow:var(--shadow)}
+.wow .n{flex:0 0 auto;width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:var(--navy);color:#fff;font-family:Fraunces;font-weight:600;font-size:1.05rem}
+.wow h4{font-size:1.08rem;margin-bottom:2px}
+.wow p{margin:0;color:var(--muted);font-size:.94rem}
+
+/* PERSON cards */
+.person{position:relative;border-radius:var(--r);padding:22px;color:#fff;overflow:hidden;min-height:172px;display:flex;flex-direction:column;justify-content:flex-end;box-shadow:var(--shadow)}
+.person:before{content:"";position:absolute;inset:0;background:var(--g);opacity:1}
+.person>*{position:relative}
+.person .who{font-family:Fraunces;font-size:1.45rem;font-weight:600}
+.person .tag{font-size:.78rem;opacity:.9;font-weight:600;letter-spacing:.05em;text-transform:uppercase;margin-bottom:auto}
+.person p{margin:.5em 0 0;font-size:.92rem;color:rgba(255,255,255,.95)}
+.p-mom{--g:linear-gradient(145deg,#7B3F9E,#4A2A78)}
+.p-dad{--g:linear-gradient(145deg,#1F6F8B,#123E5C)}
+.p-maya{--g:linear-gradient(145deg,#C24E7A,#7A2E63)}
+.p-vik{--g:linear-gradient(145deg,#B4762A,#7C3D1E)}
+
+/* DAY TABS */
+.daytabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.daytab{flex:1 1 0;min-width:130px;cursor:pointer;border:1px solid var(--line);background:var(--paper);border-radius:14px;
+  padding:12px 14px;text-align:left;transition:.18s;box-shadow:var(--shadow)}
+.daytab:hover{border-color:var(--blue)}
+.daytab.active{background:var(--navy);border-color:var(--navy);color:#fff}
+.daytab .dow{font-weight:700;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;opacity:.8}
+.daytab .dt{font-family:Fraunces;font-size:1.15rem;font-weight:600}
+.daytab .th{font-size:.82rem;opacity:.85}
+.daytab.active .dow{color:var(--sky)}
+
+.day{display:none;animation:fade .35s ease}
+.day.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.day-hero{position:relative;border-radius:var(--r);overflow:hidden;margin-bottom:20px;box-shadow:var(--shadow)}
+.day-hero img{width:100%;height:230px;object-fit:cover}
+.day-hero .cap{position:absolute;left:0;right:0;bottom:0;padding:18px 22px;color:#fff;
+  background:linear-gradient(0deg,rgba(11,37,69,.9),transparent)}
+.day-hero .cap h3{font-size:1.5rem}
+.day-hero .cap .wxline{font-size:.9rem;opacity:.95;margin-top:3px}
+
+.timeline{border-left:2px solid var(--line);margin-left:8px;padding-left:0}
+.tl{position:relative;padding:0 0 22px 26px;margin-left:14px}
+.tl:before{content:"";position:absolute;left:-9px;top:4px;width:14px;height:14px;border-radius:50%;background:var(--paper);border:3px solid var(--blue)}
+.tl.star:before{border-color:var(--gold);background:var(--gold)}
+.tl .time{font-weight:700;font-size:.82rem;color:var(--blue);letter-spacing:.03em}
+.tl h4{font-size:1.1rem;margin:1px 0 3px}
+.tl p{margin:0;color:var(--muted);font-size:.95rem}
+.tl .note{margin-top:6px;font-size:.86rem;color:var(--ink);background:#F4F1E9;border:1px solid var(--line);border-radius:10px;padding:7px 11px;display:inline-block}
+
+/* TAGS */
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.tag-pill{font-size:.73rem;font-weight:600;padding:3px 9px;border-radius:999px;border:1px solid;line-height:1.5;white-space:nowrap}
+.t-veg{color:var(--green);border-color:#BFE3CD;background:#EDF8F1}
+.t-egg{color:var(--amber);border-color:#F0DBB6;background:#FCF4E6}
+.t-maya{color:var(--violet);border-color:#D8D2F2;background:#F1EFFB}
+.t-view{color:var(--blue);border-color:#BBD9E8;background:#ECF5FA}
+.t-cool{color:var(--teal);border-color:#B6DAD9;background:#E8F4F4}
+.t-walk{color:#566273;border-color:#D7DCE3;background:#EFF2F5}
+.t-sun{color:#7A5400;border-color:#EAD9AE;background:#FBF3DF}
+
+/* MEAL card */
+.meal{display:grid;grid-template-columns:1fr;gap:0;border:1px solid var(--line);border-radius:14px;background:var(--paper);overflow:hidden;margin-top:14px}
+.meal .mh{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px 16px;background:#FAF7F1;border-bottom:1px solid var(--line)}
+.meal .mh .k{font-weight:700;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
+.meal .mh h4{font-size:1.12rem}
+.meal .mb{padding:13px 16px}
+.meal ul{margin:8px 0 0;padding-left:18px}
+.meal li{font-size:.92rem;margin:3px 0}
+.meal .bk{font-size:.85rem;color:var(--muted);margin-top:9px}
+.dish b{font-weight:600}
+
+/* FOOD grid */
+.rcard{border:1px solid var(--line);border-radius:var(--r);background:var(--paper);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.rcard .rh{padding:16px 18px 6px}
+.rcard .hood{font-size:.76rem;font-weight:700;color:var(--blue);letter-spacing:.05em;text-transform:uppercase}
+.rcard h4{font-size:1.2rem;margin:2px 0 4px}
+.rcard .rb{padding:0 18px 16px;font-size:.92rem;color:var(--muted);flex:1}
+.rcard .rf{padding:12px 18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font-size:.86rem}
+
+/* CALLOUT */
+.callout{border-radius:var(--r);padding:20px 22px;border:1px solid var(--line);background:var(--paper);box-shadow:var(--shadow)}
+.callout.warn{background:#FCF4E6;border-color:#F0DBB6}
+.callout.info{background:#ECF5FA;border-color:#BBD9E8}
+.callout.good{background:#EDF8F1;border-color:#BFE3CD}
+.callout h4{font-size:1.12rem;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.callout p,.callout li{font-size:.95rem}
+.callout p{margin:.4em 0}
+.script{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.86rem;background:#0B2545;color:#EAF2F8;border-radius:12px;padding:14px 16px;margin-top:10px;line-height:1.55;white-space:pre-wrap;overflow-wrap:anywhere}
+
+/* TABLE */
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);background:var(--paper)}
+table{border-collapse:collapse;width:100%;min-width:520px}
+th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);font-size:.93rem}
+th{background:#FAF7F1;font-weight:700;font-size:.82rem;letter-spacing:.03em;color:var(--navy)}
+tr:last-child td{border-bottom:none}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+.total td{font-weight:700;background:#F4F1E9;font-size:1rem}
+
+/* CHECKLIST */
+.check{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--paper);margin-bottom:10px;box-shadow:var(--shadow);transition:.15s}
+.check.done{opacity:.55;background:#F4F4F0}
+.check input{margin-top:4px;width:20px;height:20px;flex:0 0 auto;accent-color:var(--green);cursor:pointer}
+.check .ct{flex:1}
+.check .urg{font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;background:#FCE8E6;color:var(--red);border:1px solid #F3C9C4}
+.check .urg.soon{background:#FCF4E6;color:var(--amber);border-color:#F0DBB6}
+.check .urg.ok{background:#EDF8F1;color:var(--green);border-color:#BFE3CD}
+.check h4{font-size:1rem;margin:0 0 2px}
+.check p{margin:0;font-size:.88rem;color:var(--muted)}
+.check.done h4{text-decoration:line-through}
+
+/* FOOTER */
+footer{background:var(--navy);color:#cdd8e6;padding:50px 0 60px}
+footer h3{color:#fff;font-size:1.5rem;margin-bottom:10px}
+footer a{color:var(--sky)}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px;margin-top:24px}
+footer small{color:#a8b6c9}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--navy);color:#fff;border-radius:12px;padding:11px 18px;font-weight:600;font-size:.92rem;border:1px solid var(--navy);cursor:pointer}
+.btn:hover{background:var(--navy2);text-decoration:none}
+.btn.ghost{background:transparent;color:var(--navy);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--navy);background:#fff}
+.btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.pin{font-size:.8rem;color:var(--muted)}
+
+/* RESPONSIVE */
+@media(max-width:880px){
+  .g4{grid-template-columns:repeat(2,1fr)} .g3{grid-template-columns:repeat(2,1fr)}
+  footer .cols{grid-template-columns:1fr 1fr}
+}
+@media(max-width:860px){
+  .navlinks{display:none;position:absolute;top:60px;left:0;right:0;flex-direction:column;background:var(--cream);
+    border-bottom:1px solid var(--line);padding:8px 20px 12px;gap:2px;box-shadow:var(--shadow)}
+  .navlinks.open{display:flex}
+  .navlinks a{padding:12px 0;border-bottom:1px solid var(--line)}
+  .menu-btn{display:block}
+}
+@media(max-width:660px){
+  .g4,.g3,.g2{grid-template-columns:1fr}
+  .wxstrip{grid-template-columns:repeat(2,1fr)}
+  section{padding:52px 0}
+  .hero{min-height:92vh}
+  .daytab{min-width:0;flex:1 1 46%}
+  footer .cols{grid-template-columns:1fr}
+  .hero .flagline{font-size:.64rem;letter-spacing:.07em;padding:6px 12px}
+  #budget table{min-width:0}
+  #budget th:nth-child(4),#budget td:nth-child(4){display:none}
+  #budget td,#budget th{padding:11px 12px}
+}
+@media print{
+  .nav,.menu-btn,.hero .scrim,.btnrow,.btn{display:none!important}
+  .day{display:block!important} .daytabs{display:none}
+  body{background:#fff}
+  section{padding:18px 0;page-break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<a href="#content" class="skip">Skip to content</a>
+
+<!-- NAV -->
+<div class="nav">
+  <div class="wrap row">
+    <div class="brand">🌆 Chicago&nbsp;’26 <span class="stars">★★★</span></div>
+    <nav class="navlinks" id="navlinks">
+      <a href="#overview">Overview</a>
+      <a href="#itinerary">Days</a>
+      <a href="#food">Food</a>
+      <a href="#july4">July 4th</a>
+      <a href="#obama">Obama Center</a>
+      <a href="#logistics">Logistics</a>
+      <a href="#budget">Budget</a>
+      <a href="#checklist">Checklist</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navlinks">☰</button>
+  </div>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <img class="bg" src="assets/img/river.jpg" alt="Chicago River and skyline" />
+  <div class="scrim"></div>
+  <div class="inner">
+    <div class="pad">
+      <span class="flagline">★ America’s 250th Birthday · July 4 Weekend</span>
+      <h1>Chicago.</h1>
+      <p class="sub">Four days for the four of us — built for comfort, great vegetarian food, skyline views, and a Fourth of July to remember.</p>
+      <div class="meta">
+        <span><b>Thu Jul 2 → Sun Jul 5, 2026</b></span><span class="dot">•</span>
+        <span>The Agrawal Family</span><span class="dot">•</span>
+        <span>Home base: Streeterville</span>
+      </div>
+      <div class="wxstrip">
+        <div class="wx"><div class="d">THU · Jul 2</div><div class="ic">☀️</div><div class="t">79°</div><div class="lo">low 69° · arrival</div></div>
+        <div class="wx"><div class="d">FRI · Jul 3</div><div class="ic">⛅</div><div class="t">80°</div><div class="lo">low 64° · indoor day</div></div>
+        <div class="wx"><div class="d">SAT · Jul 4</div><div class="ic">🎆</div><div class="t">77°</div><div class="lo">low 68° · fireworks</div></div>
+        <div class="wx"><div class="d">SUN · Jul 5</div><div class="ic">🌤️</div><div class="t">78°</div><div class="lo">low 69° · fly home</div></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="content">
+<!-- OVERVIEW -->
+<section id="overview">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">The plan in one breath</span>
+      <h2>A gentle pace, a full trip.</h2>
+      <p>Everything clusters tight so the parents aren’t shuttling back and forth, the hottest sun and the most walking are designed around, and there’s a real “wow” every single day. Money goes to comfort — door-to-door rides, a roomy suite, and two destination meals.</p>
+    </div>
+
+    <div class="grid g4" style="margin:28px 0 10px">
+      <div class="wow"><div class="n">1</div><div><h4>Architecture cruise</h4><p>Day one. Seated, shaded, the whole skyline — the first jaw-drop.</p></div></div>
+      <div class="wow"><div class="n">2</div><div><h4>The Obama Center</h4><p>July 4th on the free campus — the heart of the trip.</p></div></div>
+      <div class="wow"><div class="n">3</div><div><h4>Fireworks on the lake</h4><p>Navy Pier’s biggest-ever show, watched from the water.</p></div></div>
+      <div class="wow"><div class="n">4</div><div><h4>Two great veg meals</h4><p>ROOP & Aba — destination food, zero extra travel.</p></div></div>
+    </div>
+
+    <div class="grid g3" style="margin-top:22px">
+      <div class="card"><div class="pad">
+        <span class="eyebrow">Comfort, by design</span>
+        <h3 style="font-size:1.25rem;margin:.3em 0">Built around the parents</h3>
+        <p style="color:var(--muted);margin:0;font-size:.95rem">Door-to-door UberXL is the default. The two longest “sits” — both cruises — double as the best views of the trip. Mom’s walking stays short; Dad ducks indoors whenever the sun bites.</p>
+      </div></div>
+      <div class="card"><div class="pad">
+        <span class="eyebrow">Every meal solved</span>
+        <h3 style="font-size:1.25rem;margin:.3em 0">Vegetarian, egg-free, Maya-safe</h3>
+        <p style="color:var(--muted);margin:0;font-size:.95rem">Each restaurant is picked from its real, current menu — a named egg-free dish for Mom and a plain anchor for Maya, every time. No one stares at a menu with nothing to eat.</p>
+      </div></div>
+      <div class="card"><div class="pad">
+        <span class="eyebrow">Safe & polished</span>
+        <h3 style="font-size:1.25rem;margin:.3em 0">Streeterville the whole time</h3>
+        <p style="color:var(--muted);margin:0;font-size:.95rem">One of downtown’s most polished, lakefront pockets — walkable to the river, Navy Pier, and Millennium Park, and a clean ride to everything else.</p>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOR EACH OF YOU -->
+<section class="alt tight" id="foryou">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">Personalized</span><h2>What this trip does for each of you.</h2></div>
+    <div class="grid g4" style="margin-top:26px">
+      <div class="person p-mom"><div class="tag">Mom</div><div class="who">Views and culture</div>
+        <p>Two cruises, the 360° deck, the Bean at golden hour — picturesque everywhere, with short walks and a guaranteed egg-free breakfast each morning.</p></div>
+      <div class="person p-dad"><div class="tag">Dad</div><div class="who">The Obama Center</div>
+        <p>Your must-do, done right — plus relaxed, good-view downtime and AC escapes from the sun. No long museum slogs.</p></div>
+      <div class="person p-maya"><div class="tag">Maya</div><div class="who">Hands-on and fun</div>
+        <p>WNDR’s immersive rooms, a make-something craft session, and a gentle pace with real rest built in — nothing dragged out.</p></div>
+      <div class="person p-vik"><div class="tag">Vikram</div><div class="who">Maximum Chicago</div>
+        <p>Deep dish, Michelin-listed Indian, a rooftop, a foodie cruise — a maxed-out Chicago, with everyone happy alongside.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ITINERARY -->
+<section id="itinerary">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">Day by day</span><h2>The itinerary.</h2>
+      <p>Tap a day. Each is clustered to one area, paced for energy, and grounded in that day’s forecast. ★ marks the day’s headline.</p>
+    </div>
+
+    <div class="daytabs" role="tablist" aria-label="Choose a day" style="margin-top:26px">
+      <button class="daytab active" data-day="1" role="tab" aria-selected="true"><div class="dow">Thu · Jul 2</div><div class="dt">Arrival</div><div class="th">River &amp; skyline</div></button>
+      <button class="daytab" data-day="2" role="tab" aria-selected="false"><div class="dow">Fri · Jul 3</div><div class="dt">Maya’s Day</div><div class="th">Indoor &amp; hands-on</div></button>
+      <button class="daytab" data-day="3" role="tab" aria-selected="false"><div class="dow">Sat · Jul 4</div><div class="dt">The Fourth</div><div class="th">Obama + fireworks</div></button>
+      <button class="daytab" data-day="4" role="tab" aria-selected="false"><div class="dow">Sun · Jul 5</div><div class="dt">Departure</div><div class="th">Slow morning, fly</div></button>
+    </div>
+
+    <!-- DAY 1 -->
+    <div class="day active" data-day="1">
+      <div class="day-hero"><img src="assets/img/millennium.jpg" alt="Downtown Chicago skyline" loading="lazy" />
+        <div class="cap"><h3>Thursday · The river and the skyline</h3>
+          <div class="wxline">☀️ 79° / 69° · clearest, sunniest day — saved for the cruise</div></div></div>
+      <div class="grid g2">
+        <div>
+          <div class="timeline">
+            <div class="tl"><div class="time">~9:35 AM</div><h4>Land at O’Hare → private SUV</h4><p>A pre-booked Suburban-class car meets you at baggage claim. Fits four plus bags, no rideshare-lot trek.</p><div class="tags"><span class="tag-pill t-walk">No schlep</span><span class="tag-pill t-cool">AC</span></div></div>
+            <div class="tl"><div class="time">~10:45 AM</div><h4>Drop bags / early check-in</h4><p>Freshen up at the Embassy Suites, two blocks off the Mag Mile.</p></div>
+            <div class="tl"><div class="time">~12:30 PM</div><h4>Easy lunch — Eataly</h4><p>Air-conditioned, something for everyone, zero sun. A soft landing, not the big meal.</p><div class="tags"><span class="tag-pill t-cool">AC</span><span class="tag-pill t-walk">Low walk</span></div></div>
+            <div class="tl"><div class="time">~2:30 PM</div><h4>Shaded Riverwalk sit</h4><p>A drink and the water at City Winery on the Riverwalk — Dad’s first proper relax.</p><div class="tags"><span class="tag-pill t-view">Views</span><span class="tag-pill t-sun">Shade</span></div></div>
+            <div class="tl star"><div class="time">~3:30 PM ★</div><h4>Architecture river cruise</h4><p>Chicago’s First Lady — 90 minutes, docent-narrated, the whole skyline from the water. Upstairs for photos; AC cabin below is Dad’s sun escape.</p><div class="note">The trip’s first showstopper — and nobody walks a step.</div><div class="tags"><span class="tag-pill t-view">Best views</span><span class="tag-pill t-walk">Seated</span><span class="tag-pill t-sun">Shade option</span></div></div>
+            <div class="tl"><div class="time">~5:30 PM</div><h4>Back to the hotel · rest</h4><p>Recharge before dinner.</p></div>
+            <div class="tl"><div class="time">~7:00 PM</div><h4>Dinner — Lou Malnati’s</h4><p>The deep-dish rite of passage. <b>Call ahead</b> — the pie bakes 45 minutes.</p></div>
+          </div>
+        </div>
+        <div>
+          <div class="meal">
+            <div class="mh"><div><span class="k">Lunch</span><h4>Eataly Chicago</h4></div><a class="pin" href="https://www.eataly.com/us_en/stores/chicago/" target="_blank" rel="noopener">menu ↗</a></div>
+            <div class="mb">
+              <p class="dish"><b>Maya:</b> Margherita pizza + a side of fries — plain and safe.</p>
+              <ul>
+                <li><span class="t-egg tag-pill">Mom · egg-free</span> Spaghetto al Pomodoro (dried, egg-free pasta — skip the fresh egg pastas)</li>
+                <li>Wood-fired vegetable pizzas, fresh mozzarella, gelato</li>
+              </ul>
+              <p class="bk">Backup: <a href="https://thepurplepigchicago.com/" target="_blank" rel="noopener"><b>The Purple Pig</b></a> — Mediterranean small plates, deeply veg-friendly, same block.</p>
+            </div>
+          </div>
+          <div class="meal">
+            <div class="mh"><div><span class="k">Dinner</span><h4>Lou Malnati’s (River North)</h4></div><a class="pin" href="https://www.loumalnatis.com/menu" target="_blank" rel="noopener">menu ↗</a></div>
+            <div class="mb">
+              <p class="dish"><b>Maya:</b> Cheese deep dish + garlic bread.</p>
+              <ul>
+                <li><span class="t-egg tag-pill">Mom · egg-free</span> Cheese deep dish, regular crust — <b>ask for no romano on top</b>; confirm the crust is egg-free when you call ahead</li>
+                <li>“The Lou” — spinach, mushroom, tomato (also egg-free)</li>
+              </ul>
+              <p class="bk">Backup: <a href="https://www.unos.com/" target="_blank" rel="noopener"><b>Pizzeria Uno</b></a> — the 1943 birthplace of deep dish, takes reservations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 2 -->
+    <div class="day" data-day="2">
+      <div class="day-hero"><img src="assets/img/willis.jpg" alt="Willis Tower and the Loop" loading="lazy" />
+        <div class="cap"><h3>Friday · Maya’s day — hands-on & indoors</h3>
+          <div class="wxline">⛅ 80° / 64° · the wettest day — so we bank it all indoors</div></div></div>
+      <div class="grid g2">
+        <div>
+          <div class="timeline">
+            <div class="tl"><div class="time">~9:00 AM</div><h4>Breakfast — Beatrix</h4><p>Polished, easy, with reliable egg-free options.</p></div>
+            <div class="tl star"><div class="time">~10:30 AM ★</div><h4>WNDR Museum</h4><p>Immersive, interactive rooms — not an art museum. Includes a Yayoi Kusama infinity room (a quick, timed walk-through). About an hour, all AC.</p><div class="note">Maya’s headline — make-it, touch-it, photograph-it.</div><div class="tags"><span class="tag-pill t-maya">Maya pick</span><span class="tag-pill t-cool">AC</span><span class="tag-pill t-walk">Low walk</span></div></div>
+            <div class="tl"><div class="time">~12:15 PM</div><h4>Lunch — Aba (rooftop)</h4><p>A foodie high point — and it’s right here in the West Loop, no extra travel.</p><div class="tags"><span class="tag-pill t-view">Rooftop</span><span class="tag-pill t-veg">Veg-rich</span></div></div>
+            <div class="tl star"><div class="time">~2:00 PM ★</div><h4>Hands-on craft studio</h4><p>Paint-your-own pottery or a candle/scent workshop — a seated, ~90-minute make-something session with a take-home keepsake.</p><div class="note">The thing that makes Maya’s day — and the parents get to sit.</div><div class="tags"><span class="tag-pill t-maya">Maya pick</span><span class="tag-pill t-walk">Seated</span></div></div>
+            <div class="tl"><div class="time">~3:30 PM</div><h4>Real afternoon pause</h4><p>Café or hotel downtime — written in, on purpose, to beat the cranky wall.</p></div>
+            <div class="tl"><div class="time">~5:30 PM</div><h4>Hotel downtime</h4><p>Dad’s rooftop relaxer before dinner.</p></div>
+            <div class="tl star"><div class="time">~7:00 PM ★</div><h4>Dinner — ROOP</h4><p>Michelin-listed progressive Indian, with a dedicated vegetarian tasting — the foodie “wow,” in the same cluster.</p><div class="tags"><span class="tag-pill t-veg">Veg tasting</span><span class="tag-pill t-egg">Egg-aware</span></div></div>
+          </div>
+        </div>
+        <div>
+          <div class="meal">
+            <div class="mh"><div><span class="k">Lunch</span><h4>Aba</h4></div><a class="pin" href="https://abarestaurants.com/chicago/" target="_blank" rel="noopener">menu ↗</a></div>
+            <div class="mb">
+              <p class="dish"><b>Maya:</b> flatbread + crispy potatoes / plain pasta — simple, named, safe.</p>
+              <ul>
+                <li><span class="t-egg tag-pill">Mom · egg-free</span> Hummus, stracciatella, grilled vegetables (skip the meringue & brûlée desserts)</li>
+                <li>Vikram: the full 15-plus vegetarian spread — his big foodie meal of the trip</li>
+              </ul>
+              <p class="bk">Book ahead on Tock; check for cancellations if full.</p>
+            </div>
+          </div>
+          <div class="meal">
+            <div class="mh"><div><span class="k">Dinner</span><h4>ROOP</h4></div><a class="pin" href="https://www.opentable.com/r/roop-chicago" target="_blank" rel="noopener">reserve ↗</a></div>
+            <div class="mb">
+              <p class="dish"><b>Maya:</b> cheese naan + paneer + rice — plain and safe.</p>
+              <ul>
+                <li><span class="t-egg tag-pill">Mom · egg-free</span> The vegetarian menu is egg-aware and deeply veg — confirm egg-free on any tasting items when you reserve</li>
+                <li>Michelin-recognized; a genuine destination meal</li>
+              </ul>
+              <p class="bk">Backup: <a href="https://www.google.com/maps/search/?api=1&query=Gaylord+Fine+Indian+Cuisine+Gold+Coast+Chicago" target="_blank" rel="noopener"><b>Gaylord Fine Indian</b></a> (Gold Coast) — comfort-Indian near home base.</p>
+            </div>
+          </div>
+          <div class="meal">
+            <div class="mh"><div><span class="k">Breakfast</span><h4>Beatrix</h4></div><a class="pin" href="https://www.beatrixrestaurants.com/" target="_blank" rel="noopener">menu ↗</a></div>
+            <div class="mb"><ul>
+              <li><span class="t-maya tag-pill">Maya</span> Lemon pancakes</li>
+              <li><span class="t-egg tag-pill">Mom · egg-free</span> Oatmeal, fresh fruit, bakery toast — no substitution gamble</li>
+            </ul></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 3 -->
+    <div class="day" data-day="3">
+      <div class="day-hero"><img src="assets/img/obama.jpg" alt="Obama Presidential Center, opening day June 2026" loading="lazy" />
+        <div class="cap"><h3>Saturday · The Fourth — Obama Center and fireworks</h3>
+          <div class="wxline">🎆 77° / 68° · mostly dry · America’s 250th · dark by 10 PM</div></div></div>
+      <div class="callout info" style="margin-bottom:18px">
+        <h4>🧭 How the day fits together</h4>
+        <p>The Obama Center’s “People’s Fourth” runs 2–7 PM; the fireworks cruise boards ~7:30 PM at Navy Pier. <b>One private SUV is hired for the whole evening</b> — Jackson Park → hotel to freshen up → Navy Pier → post-fireworks pickup — so there’s no double-surge rideshare gamble and no walking in the dark.</p>
+      </div>
+      <div class="grid g2">
+        <div>
+          <div class="timeline">
+            <div class="tl"><div class="time">Slow AM</div><h4>Sleep in · easy egg-free breakfast</h4><p>Conserve energy for a big, late night.</p></div>
+            <div class="tl"><div class="time">~12:30 PM</div><h4>A real lunch downtown</h4><p>Eat well <i>before</i> heading south, so the evening’s food is a bonus, not the only dinner.</p></div>
+            <div class="tl"><div class="time">~1:45 PM</div><h4>Hired SUV → Obama Center</h4><p>~25 min to 6001 S Stony Island. Door to door — no curbs, no unfamiliar blocks.</p><div class="tags"><span class="tag-pill t-walk">Door-to-door</span></div></div>
+            <div class="tl star"><div class="time">2:00–4:00 PM ★</div><h4>“The People’s Fourth” on the campus</h4><p>The free, brand-new 19-acre campus — architecture, gardens, public art, and a costumed brass band (~3 PM). A short, shaded loop with benches; the Forum and library are AC refuges. Hard-capped at two hours.</p><div class="note">Dad’s must-do, delivered. Maya can anchor at the music and skip the longer walk.</div><div class="tags"><span class="tag-pill t-veg">Free</span><span class="tag-pill t-sun">Shaded loop</span><span class="tag-pill t-cool">AC refuges</span></div></div>
+            <div class="tl"><div class="time">~4:00 PM</div><h4>SUV staged → hotel</h4><p>Beat the road closures; no 30-minute pickup gamble.</p></div>
+            <div class="tl"><div class="time">5:00–7:00 PM</div><h4>Genuine rest at the hotel</h4><p>Actually lie down — recharge for the late night.</p></div>
+            <div class="tl star"><div class="time">~7:15 PM ★</div><h4>Board the fireworks dinner cruise</h4><p>Spirit of Chicago from Navy Pier. Board on the early end to dodge the crush. Dinner, skyline, and the 10 PM show from the open-air deck — seated, fed, AC, no crowd-crush.</p><div class="tags"><span class="tag-pill t-view">Fireworks from the water</span><span class="tag-pill t-walk">Seated</span></div></div>
+            <div class="tl"><div class="time">~10:45 PM</div><h4>Disembark → SUV staged inland</h4><p>Pickup at Grand/Illinois, not the gridlocked pier lot. The plan is told in advance, so no one’s improvising in the dark.</p></div>
+          </div>
+        </div>
+        <div>
+          <div class="callout warn">
+            <h4>📞 Before you book the cruise — one call</h4>
+            <p>The cruise is the plan <b>if</b> a quick call confirms the food works for us (its standard buffet leans on sides for vegetarians). Otherwise we pivot to the reservable backup below.</p>
+            <div class="script">Call City Cruises · 773-741-4684
+
+“Booking the July 4 Spirit of Chicago
+fireworks dinner cruise for 4. Three
+things to confirm:
+ 1) A hot, EGG-FREE vegetarian entrée
+    for one guest (no egg at all).
+ 2) A plain item for a picky eater —
+    plain pasta / rice / fries.
+ 3) Exact departure time, and that the
+    boat is ON THE WATER at 10 PM for
+    the fireworks (not docked early).”</div>
+            <p style="margin-top:10px;font-size:.86rem">All-ages ✓ (Maya is 20). Non-refundable, so confirm first. ~$128/adult.</p>
+            <div class="btnrow"><a class="btn" href="https://www.cityexperiences.com/chicago/city-cruises/4th-july-dinner-cruise-lake-michigan/" target="_blank" rel="noopener">Cruise details ↗</a><a class="btn ghost" href="https://www.usawelcome.net/ecms/Chicago%20Dinner%20Buffet.pdf" target="_blank" rel="noopener">Buffet menu (PDF) ↗</a></div>
+          </div>
+          <div class="callout good" style="margin-top:16px">
+            <h4>🌇 Backup — Cindy’s Rooftop</h4>
+            <p>All-ages, <b>reservable</b> terrace facing the lake, with comfort food Maya will actually eat (grilled cheese, gnocchi) and easy egg-free options for Mom. View of the Navy Pier show is real but distant. Book the terrace the day reservations open (~14 days out).</p>
+            <p style="font-size:.86rem">If you’d rather skip the cruise’s food gamble, this becomes the plan — pair it with the free <a href="https://www.grantparkmusicfestival.com/2026-concerts/" target="_blank" rel="noopener">Grant Park “Independence Day Salute”</a> at 7:30 PM, a 3-minute walk away.</p>
+            <div class="btnrow"><a class="btn ghost" href="https://www.chicagoathletichotel.com/restaurants/cindys/" target="_blank" rel="noopener">Cindy’s ↗</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 4 -->
+    <div class="day" data-day="4">
+      <div class="day-hero"><img src="assets/img/hancock.jpg" alt="360 Chicago observation tower" loading="lazy" />
+        <div class="cap"><h3>Sunday · Slow morning, then home</h3>
+          <div class="wxline">🌤️ 78° / 69° · slight afternoon storm risk — keep it short & central</div></div></div>
+      <div class="grid g2">
+        <div>
+          <div class="timeline">
+            <div class="tl"><div class="time">~8:30 AM</div><h4>Breakfast — Wildberry (or hotel)</h4><p>Go early to beat the holiday-weekend wait. By Millennium Park.</p></div>
+            <div class="tl"><div class="time">~9:30 AM</div><h4>Millennium Park & the Bean</h4><p>Cloud Gate’s mirror shot and Crown Fountain — flat, paved, low-walking. (We’re flying today, so admire the fountain, don’t get soaked.)</p><div class="tags"><span class="tag-pill t-view">Iconic photos</span><span class="tag-pill t-walk">Low walk</span></div></div>
+            <div class="tl star"><div class="time">~10:30 AM ★</div><h4>360 Chicago observation deck</h4><p>Lake-facing, with a lounge to actually sit, plus “TILT” for Maya. Mom’s sit-and-photograph skyline moment to close the trip.</p><div class="tags"><span class="tag-pill t-view">Mom pick</span><span class="tag-pill t-cool">AC</span><span class="tag-pill t-walk">Seated</span></div></div>
+            <div class="tl"><div class="time">~11:15 AM</div><h4>Hotel · bags · check out</h4></div>
+            <div class="tl"><div class="time">~11:45 AM</div><h4>One ride to O’Hare, together</h4><p>Shared SUV to Terminal 1. Check in together at United, same security, split at the gates. Leave ~3 hours early for peak post-holiday travel.</p><div class="tags"><span class="tag-pill t-walk">One curb, one line</span></div></div>
+            <div class="tl"><div class="time">2:13 / 3:26 PM</div><h4>Fly home — nonstop</h4><p>Family → RDU; Vikram → SFO. Both United nonstops from Terminal 1, ~73 minutes apart.</p></div>
+          </div>
+        </div>
+        <div>
+          <div class="meal">
+            <div class="mh"><div><span class="k">Breakfast</span><h4>Wildberry Pancakes</h4></div><a class="pin" href="https://www.wildberrycafe.com/" target="_blank" rel="noopener">menu ↗</a></div>
+            <div class="mb"><ul>
+              <li><span class="t-maya tag-pill">Maya / Dad / Vikram</span> Buttermilk pancakes (contain egg)</li>
+              <li><span class="t-egg tag-pill">Mom · egg-free</span> Vegan Breakfast Hash, or oatmeal + fruit + toast (all pancakes/crêpes/French toast contain egg)</li>
+            </ul>
+            <p class="bk">Backup: Beatrix, or the hotel’s free made-to-order breakfast.</p></div>
+          </div>
+          <div class="callout info">
+            <h4>📍 Open decision · the deck</h4>
+            <p>360 Chicago is the recommended close. If energy’s low, the <b>Centennial Wheel</b> at Navy Pier is an even easier seated view ride — or skip a formal deck entirely, since both cruises already deliver elite skyline views.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOD -->
+<section class="alt" id="food">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">The food program</span><h2>Where we eat — and what.</h2>
+      <p>Every pick is vegetarian-rich (not a token option or two), with a named <span class="t-egg tag-pill">egg-free</span> dish for Mom and a plain <span class="t-maya tag-pill">Maya-safe</span> anchor. Tap any menu to see for yourself.</p>
+    </div>
+    <div class="grid g3" style="margin-top:26px">
+      <div class="rcard"><img src="assets/img/deepdish.jpg" alt="Chicago deep dish pizza" loading="lazy" style="height:160px;object-fit:cover"><div class="rh"><div class="hood">River North · Iconic</div><h4>Lou Malnati’s</h4></div><div class="rb">The deep-dish rite of passage. Cheese pie for Maya; egg-free with “no romano on top” for Mom. Call ahead — 45-min bake.</div><div class="rf"><span class="tags"><span class="tag-pill t-egg">egg-free</span><span class="tag-pill t-maya">Maya</span></span><a href="https://www.loumalnatis.com/menu" target="_blank" rel="noopener">menu ↗</a></div></div>
+
+      <div class="rcard"><div class="rh" style="padding-top:18px"><div class="hood">West Loop · Foodie ★</div><h4>ROOP</h4></div><div class="rb">Michelin-listed progressive Indian with a dedicated vegetarian tasting. Cheese naan, paneer & rice keep it simple for Maya; egg-aware kitchen for Mom.</div><div class="rf"><span class="tags"><span class="tag-pill t-veg">veg tasting</span><span class="tag-pill t-egg">egg-aware</span></span><a href="https://www.opentable.com/r/roop-chicago" target="_blank" rel="noopener">reserve ↗</a></div></div>
+
+      <div class="rcard"><div class="rh" style="padding-top:18px"><div class="hood">West Loop · Rooftop ★</div><h4>Aba</h4></div><div class="rb">A veg-rich Mediterranean rooftop — 15+ vegetarian plates. Hummus, stracciatella & grilled veg for Mom; flatbread + fries for Maya.</div><div class="rf"><span class="tags"><span class="tag-pill t-view">rooftop</span><span class="tag-pill t-veg">veg-rich</span></span><a href="https://abarestaurants.com/chicago/" target="_blank" rel="noopener">menu ↗</a></div></div>
+
+      <div class="rcard"><img src="assets/img/navypier.jpg" alt="Navy Pier" loading="lazy" style="height:160px;object-fit:cover"><div class="rh"><div class="hood">Navy Pier · July 4 ★</div><h4>Spirit of Chicago cruise</h4></div><div class="rb">Fireworks dinner cruise from the water. Plain pasta/potatoes for Maya; a hot egg-free entrée for Mom must be confirmed by phone first.</div><div class="rf"><span class="tags"><span class="tag-pill t-view">on the lake</span><span class="tag-pill t-maya">Maya</span></span><a href="https://www.cityexperiences.com/chicago/city-cruises/4th-july-dinner-cruise-lake-michigan/" target="_blank" rel="noopener">details ↗</a></div></div>
+
+      <div class="rcard"><div class="rh" style="padding-top:18px"><div class="hood">The Loop · Rooftop backup</div><h4>Cindy’s Rooftop</h4></div><div class="rb">All-ages terrace over Millennium Park toward the lake. Grilled cheese & gnocchi Maya will eat; easy egg-free plates for Mom. Reservable.</div><div class="rf"><span class="tags"><span class="tag-pill t-view">view</span><span class="tag-pill t-maya">Maya</span></span><a href="https://www.chicagoathletichotel.com/restaurants/cindys/" target="_blank" rel="noopener">menu ↗</a></div></div>
+
+      <div class="rcard"><div class="rh" style="padding-top:18px"><div class="hood">River North · Easy</div><h4>Eataly · Beatrix · Wildberry</h4></div><div class="rb">The reliable, AC, something-for-everyone fillers — lunch on arrival, breakfasts with egg-free options for Mom every morning.</div><div class="rf"><span class="tags"><span class="tag-pill t-cool">AC</span><span class="tag-pill t-maya">Maya</span></span><a href="https://www.eataly.com/us_en/stores/chicago/" target="_blank" rel="noopener">Eataly ↗</a></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- JULY 4 -->
+<section id="july4">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">The main event</span><h2>The Fourth of July, the big way.</h2>
+      <p>It’s America’s 250th — and Navy Pier is staging its <b>largest, longest fireworks show in its history</b> — 15 minutes at 10 PM, choreographed over the lake. We watch it from the water.</p>
+    </div>
+    <img src="assets/img/fireworks.jpg" alt="Fourth of July fireworks over the lake" loading="lazy" style="width:100%;height:230px;object-fit:cover;border-radius:var(--r);box-shadow:var(--shadow);margin:22px 0 4px" />
+    <div class="grid g3" style="margin-top:18px">
+      <div class="card"><div class="pad"><span class="eyebrow">10:00 PM</span><h3 style="font-size:1.2rem;margin:.3em 0">The show</h3><p style="color:var(--muted);margin:0;font-size:.94rem">~15 minutes, the largest in Navy Pier history, launched over Lake Michigan for the 250th. Full dark by 10.</p></div></div>
+      <div class="card"><div class="pad"><span class="eyebrow">Our seats</span><h3 style="font-size:1.2rem;margin:.3em 0">From the water</h3><p style="color:var(--muted);margin:0;font-size:.94rem">A seated dinner cruise with an open-air deck — the most comfortable view in the city, away from the worst of the crowds.</p></div></div>
+      <div class="card"><div class="pad"><span class="eyebrow">Getting home</span><h3 style="font-size:1.2rem;margin:.3em 0">SUV staged inland</h3><p style="color:var(--muted);margin:0;font-size:.94rem">Our driver waits a block off the pier, not in the gridlock — no improvised walk in the dark.</p></div></div>
+    </div>
+    <div class="callout" style="margin-top:22px;background:#0B2545;color:#EAF2F8;border:none">
+      <h4 style="color:#fff">Also on July 4, if you want more 250th</h4>
+      <p style="color:#cdd8e6">The <a href="https://www.grantparkmusicfestival.com/2026-concerts/" target="_blank" rel="noopener" style="color:var(--sky)">Grant Park Music Festival “Independence Day Salute”</a> (7:30 PM, free, Millennium Park) and the Obama Center’s own community celebration both run the same day — built into the afternoon plan. See the <a href="#itinerary" style="color:var(--sky)" onclick="showDay(3)">Saturday timeline</a> for how it all threads together.</p>
+    </div>
+  </div>
+</section>
+
+<!-- OBAMA -->
+<section class="alt" id="obama">
+  <div class="wrap">
+    <div class="grid g2" style="align-items:center;gap:34px">
+      <div>
+        <span class="eyebrow">The heart of the trip</span>
+        <h2 style="font-size:clamp(1.9rem,4.4vw,2.8rem);margin:.2em 0 .4em">The Obama Presidential Center.</h2>
+        <p style="color:var(--muted)">It opened June 19, 2026, in Jackson Park — and on July 4 it hosts “The People’s Fourth.” The <b>campus is free and open</b>, and that <i>is</i> the experience: the architecture Dad came for, gardens, public art, and a costumed brass band at 3 PM.</p>
+        <div class="callout warn" style="margin-top:16px">
+          <h4>🎟️ About the museum interior</h4>
+          <p>The indoor museum is timed-entry and <b>sold out through the fall</b> — the next public release is July 8, after we leave. So we treat the interior as a long shot, not the plan:</p>
+          <ul style="margin:.3em 0 0;padding-left:20px;font-size:.93rem">
+            <li>Grab a <b>$5 Founding Membership</b> now for the July 1 early-access window — cheap insurance.</li>
+            <li>Vikram works the cancellation line (773-900-0044) and asks the desk on the day.</li>
+            <li>Either way, the free campus is the guaranteed, moving win.</li>
+          </ul>
+          <div class="btnrow"><a class="btn" href="https://www.obama.org/visit/" target="_blank" rel="noopener">Plan a visit ↗</a></div>
+        </div>
+      </div>
+      <div><img src="assets/img/obama.jpg" alt="Obama Presidential Center, opening day June 2026" loading="lazy" style="border-radius:var(--r);box-shadow:var(--shadow-lg);width:100%;height:440px;object-fit:cover"></div>
+    </div>
+  </div>
+</section>
+
+<!-- LOGISTICS -->
+<section id="logistics">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">The moving parts</span><h2>Flights, hotel and getting around.</h2></div>
+    <div class="grid g2" style="margin-top:26px">
+      <div class="card"><div class="pad">
+        <span class="eyebrow">Flights · all United, nonstop, Terminal 1</span>
+        <h3 style="font-size:1.3rem;margin:.3em 0">One terminal, both ways</h3>
+        <p style="color:var(--muted);font-size:.95rem;margin:.2em 0">The Sunday split drives the choice: one airline means one curb, one security line, and we only separate at the gates. Every leg is a United nonstop — no connections for anyone.</p>
+        <table style="min-width:0;margin-top:12px"><tbody>
+          <tr><td><b>Thu Jul 2 · out</b></td><td>RDU → ORD <b>nonstop</b>, ~8:00 AM (~2h35m), all four together</td></tr>
+          <tr><td><b>Sun Jul 5 · family</b></td><td>ORD → RDU <b>nonstop</b>, ~2:13 PM (Terminal 1)</td></tr>
+          <tr><td><b>Sun Jul 5 · Vikram</b></td><td>ORD → SFO <b>nonstop</b>, ~3:26 PM (Terminal 1)</td></tr>
+        </tbody></table>
+        <p class="pin" style="margin-top:10px">All three legs are United nonstops. Add Economy Plus legroom for Mom and Dad, and verify exact flight numbers/times at booking — book soon, holiday demand.</p>
+      </div></div>
+      <div class="card"><div class="pad">
+        <span class="eyebrow">Hotel · Streeterville</span>
+        <h3 style="font-size:1.3rem;margin:.3em 0">Embassy Suites, Mag Mile</h3>
+        <p style="color:var(--muted);font-size:.95rem;margin:.2em 0">A two-room suite for all four — privacy plus togetherness — and a <b>free made-to-order breakfast daily</b> that quietly solves Mom’s egg-free morning. ~$1,250 for three nights, in a safe, polished pocket two blocks off the Mag Mile.</p>
+        <p style="font-size:.9rem;margin:.4em 0 0"><b>Considered & passed:</b> two rooms at The Wade (lakefront W rebrand) — better views, but no included breakfast, weaker reviews, and ~$1,450 more. Easy to flip if the lake view wins out.</p>
+        <div class="btnrow"><a class="btn ghost" href="https://www.hilton.com/en/hotels/chirees-embassy-suites-chicago-downtown-magnificent-mile/" target="_blank" rel="noopener">Embassy Suites ↗</a></div>
+      </div></div>
+    </div>
+    <div class="grid g3" style="margin-top:18px">
+      <div class="card"><div class="pad"><span class="eyebrow">Getting around</span><h3 style="font-size:1.15rem;margin:.3em 0">UberXL, door to door</h3><p style="color:var(--muted);font-size:.93rem;margin:0">The default everywhere — comfortable for the parents. Two rides (both cruises) are the views themselves. Budget ~$650 for all ground transport.</p></div></div>
+      <div class="card"><div class="pad"><span class="eyebrow">To the Obama Center</span><h3 style="font-size:1.15rem;margin:.3em 0">~25 min south</h3><p style="color:var(--muted);font-size:.93rem;margin:0">Private SUV hired for all of July 4 — the drop is right at the campus entrance, so there’s no parking hunt and no extra walking in the heat.</p></div></div>
+      <div class="card"><div class="pad"><span class="eyebrow">Mom’s comfort</span><h3 style="font-size:1.15rem;margin:.3em 0">Polished & safe</h3><p style="color:var(--muted);font-size:.93rem;margin:0">Streeterville, the Mag Mile, the Riverwalk and the campus are all polished, busy, and easy to enjoy — with door-to-door rides making getting around effortless.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BUDGET -->
+<section class="alt" id="budget">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">The money</span><h2>Budget.</h2>
+      <p>The recommended build lands comfortably under the $7,500–8,000 target, leaving room to add or upgrade. A comfort-max version (lakefront view hotel) still sits under the $10k ceiling.</p>
+    </div>
+    <div class="tablewrap" style="margin-top:24px">
+      <table>
+        <thead><tr><th>Category</th><th class="num">Recommended</th><th class="num">Comfort+</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Flights (4)</td><td class="num">$1,450</td><td class="num">$1,650</td><td>Family round-trip ×3 + Vikram one-way to SFO + legroom</td></tr>
+          <tr><td>Hotel · 3 nights</td><td class="num">$1,250</td><td class="num">$3,400</td><td>Embassy suite (breakfast incl.) · or lakefront view hotel</td></tr>
+          <tr><td>Food</td><td class="num">$1,700</td><td class="num">$1,900</td><td>Free breakfast offsets; ROOP + Aba at the top end</td></tr>
+          <tr><td>Activities & tickets</td><td class="num">$1,150</td><td class="num">$1,250</td><td>Cruise · WNDR · craft · 360° · fireworks cruise · Obama free</td></tr>
+          <tr><td>Ground transport</td><td class="num">$650</td><td class="num">$700</td><td>Airport SUV · July-4 evening SUV · daily rides</td></tr>
+          <tr><td>Buffer</td><td class="num">$450</td><td class="num">$600</td><td>Surge, tips, souvenirs, day-of flex</td></tr>
+          <tr class="total"><td>Total</td><td class="num">~$6,650</td><td class="num">~$9,500</td><td>Inside target · under the $10k cap</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- CHECKLIST -->
+<section id="checklist">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">Lock it in</span><h2>Booking checklist.</h2>
+      <p>In order of urgency — the holiday-weekend items sell out first. Tap to check off; your progress is saved on this device.</p>
+    </div>
+    <div style="margin-top:24px" id="checks">
+      <label class="check"><input type="checkbox" data-k="c1"><div class="ct"><h4>☎️ Call City Cruises to confirm the July 4 cruise food <span class="urg">Do first</span></h4><p>Egg-free hot veg entrée for Mom + plain item for Maya + on-the-water-at-10 PM. Then book — it’s non-refundable and sells out. 773-741-4684.</p></div></label>
+      <label class="check"><input type="checkbox" data-k="c2"><div class="ct"><h4>✈️ Book United flights — all nonstop <span class="urg">Do first</span></h4><p>Out Jul 2 (all 4); return Jul 5 — family→RDU, Vikram→SFO, both Terminal 1. Pick the nonstop on each leg, confirm flight numbers, add legroom for the parents.</p></div></label>
+      <label class="check"><input type="checkbox" data-k="c3"><div class="ct"><h4>🏨 Book Embassy Suites — 2-room suite (request a high floor) <span class="urg soon">This week</span></h4><p>Jul 2–5. Holiday weekend — lock the rate now.</p></div></label>
+      <label class="check"><input type="checkbox" data-k="c4"><div class="ct"><h4>⛵ Book the architecture river cruise <span class="urg soon">This week</span></h4><p>Chicago’s First Lady, late-afternoon Jul 2, via architecture.org.</p></div></label>
+      <label class="check"><input type="checkbox" data-k="c5"><div class="ct"><h4>🍽️ Reserve ROOP (Fri dinner) and Aba (Fri lunch) <span class="urg soon">This week</span></h4><p>Both book out — grab them now. Note egg-free for Mom when reserving.</p></div></label>
+      <label class="check"><input type="checkbox" data-k="c6"><div class="ct"><h4>🌇 Hold Cindy’s Rooftop terrace (July-4 backup) <span class="urg soon">~14 days out</span></h4><p>Opens ~2 weeks ahead; grab a terrace seat that holds through the 10 PM show, as insurance.</p></div></label>
+      <label class="check"><input type="checkbox" data-k="c7"><div class="ct"><h4>🎨 Confirm Maya’s craft studio (Fri 2 PM) <span class="urg ok">2 weeks out</span></h4><p>Pick a pottery or candle/scent studio open Jul 3 that takes a 90-min reservation.</p></div></label>
+      <label class="check"><input type="checkbox" data-k="c8"><div class="ct"><h4>🎟️ $5 Obama Founding Membership (museum long shot) <span class="urg ok">Before Jul 1</span></h4><p>Buys the July 1 early-access window. Worst case, $5.</p></div></label>
+      <label class="check"><input type="checkbox" data-k="c9"><div class="ct"><h4>🌃 Book 360 Chicago (Sun AM) <span class="urg ok">Anytime</span></h4><p>Timed ticket for ~10:30 AM Sunday.</p></div></label>
+      <label class="check"><input type="checkbox" data-k="c10"><div class="ct"><h4>🚗 Pre-book airport SUV + July-4 evening car <span class="urg ok">Anytime</span></h4><p>Arrival pickup at O’Hare, and the hired car for the whole Fourth.</p></div></label>
+      <label class="check"><input type="checkbox" data-k="c11"><div class="ct"><h4>🌦️ Re-check weather.com Jun 28–Jul 1 <span class="urg ok">Closer in</span></h4><p>If Friday turns clear and another day turns wet, swap the cruise day. A day-of-booking flag, not a now-decision.</p></div></label>
+    </div>
+    <div class="btnrow"><button class="btn ghost" onclick="window.print()">🖨️ Print / save as PDF</button></div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <h3>Chicago, here we come.</h3>
+    <p style="max-width:60ch;color:#cdd8e6">Built for the four of us — comfort first, no one stuck staring at a menu, Dad at the Obama Center, and the biggest fireworks in the city’s history over the lake. The rest is just showing up.</p>
+    <div class="cols">
+      <div>
+        <small>Key links</small>
+        <p style="margin:.4em 0 0;line-height:2">
+          <a href="https://www.obama.org/visit/" target="_blank" rel="noopener">Obama Center</a> ·
+          <a href="https://www.cityexperiences.com/chicago/city-cruises/4th-july-dinner-cruise-lake-michigan/" target="_blank" rel="noopener">Fireworks cruise</a> ·
+          <a href="https://www.architecture.org/" target="_blank" rel="noopener">Architecture cruise</a> ·
+          <a href="https://360chicago.com/" target="_blank" rel="noopener">360 Chicago</a><br>
+          <a href="https://www.hilton.com/en/hotels/chirees-embassy-suites-chicago-downtown-magnificent-mile/" target="_blank" rel="noopener">Embassy Suites</a> ·
+          <a href="https://navypier.org/eat-drink-and-play/fireworks/" target="_blank" rel="noopener">Navy Pier fireworks</a> ·
+          <a href="https://wndrmuseum.com/" target="_blank" rel="noopener">WNDR</a>
+        </p>
+      </div>
+      <div>
+        <small>Phone, when you need it</small>
+        <p style="margin:.4em 0 0;line-height:2">City Cruises · 773-741-4684<br>Obama Center · 773-900-0044<br>Lou Malnati’s · <a href="https://www.loumalnatis.com/" target="_blank" rel="noopener">order ahead</a></p>
+      </div>
+      <div>
+        <small>Good to know</small>
+        <p style="margin:.4em 0 0;line-height:1.7">Pack light layers (AC + boat breeze) and a compact umbrella for Fri/Sun. Driver and restaurant tips sit in the buffer. Prices and forecasts are planning estimates — re-check the weather Jun 28–Jul 1 and confirm rates at booking. Verified to mid-June 2026.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// mobile menu
+const mb=document.getElementById('menuBtn'), nl=document.getElementById('navlinks');
+mb.addEventListener('click',()=>{const open=nl.classList.toggle('open');mb.setAttribute('aria-expanded',open);});
+nl.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nl.classList.remove('open');mb.setAttribute('aria-expanded','false');}));
+
+// day tabs
+const tabs=document.querySelectorAll('.daytab'), days=document.querySelectorAll('.day');
+function showDay(n){
+  tabs.forEach(t=>{const on=t.dataset.day==String(n);t.classList.toggle('active',on);t.setAttribute('aria-selected',on);});
+  days.forEach(d=>d.classList.toggle('active', d.dataset.day==String(n)));
+}
+tabs.forEach(t=>t.addEventListener('click',()=>showDay(t.dataset.day)));
+window.showDay=showDay;
+
+// checklist persistence
+const KEY='chi26-checks';
+let saved={};
+try{saved=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
+document.querySelectorAll('#checks input').forEach(cb=>{
+  const k=cb.dataset.k;
+  if(saved[k]){cb.checked=true; cb.closest('.check').classList.add('done');}
+  cb.addEventListener('change',()=>{
+    cb.closest('.check').classList.toggle('done',cb.checked);
+    saved[k]=cb.checked;
+    try{localStorage.setItem(KEY,JSON.stringify(saved))}catch(e){}
+  });
+});
+</script>
+</body>
+</html>
