@@ -11,12 +11,12 @@
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Chicago · July 2026" />
 <meta property="og:title" content="Chicago — America's 250th · Jul 2–5, 2026" />
-<meta property="og:description" content="Our family trip: comfort-first, great vegetarian food, the Obama Center, and fireworks on the lake for the 4th." />
+<meta property="og:description" content="Our family trip: comfort-first, uniquely-Chicago food, the Obama Center, and fireworks on the lake for the 4th." />
 <meta property="og:url" content="https://vikram2agrawal.github.io/chicago-trip-2026-59f0ad/" />
 <meta property="og:image" content="https://vikram2agrawal.github.io/chicago-trip-2026-59f0ad/assets/img/river.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Chicago — America's 250th · Jul 2–5, 2026" />
-<meta name="twitter:description" content="Comfort-first family trip: great vegetarian food, the Obama Center, fireworks on the lake." />
+<meta name="twitter:description" content="Comfort-first family trip: uniquely-Chicago food, the Obama Center, fireworks on the lake." />
 <meta name="twitter:image" content="https://vikram2agrawal.github.io/chicago-trip-2026-59f0ad/assets/img/river.jpg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -50,7 +50,7 @@ img{max-width:100%;display:block}
 .nav .row{display:flex;align-items:center;justify-content:space-between;height:60px}
 .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:.95rem;color:var(--navy)}
 .brand .stars{color:var(--red);letter-spacing:2px}
-.navlinks{display:flex;gap:22px;align-items:center}
+.navlinks{display:flex;gap:20px;align-items:center}
 .navlinks a{color:var(--navy);font-weight:500;font-size:.9rem}
 .navlinks a:hover{color:var(--blue);text-decoration:none}
 .menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:1.1rem;cursor:pointer}
@@ -80,12 +80,12 @@ img{max-width:100%;display:block}
 /* SECTIONS */
 section{padding:74px 0}
 section.tight{padding:54px 0}
-.sec-head{max-width:62ch}
+.sec-head{max-width:64ch}
 .sec-head h2{font-size:clamp(1.9rem,4.4vw,2.9rem);margin:.18em 0 .35em}
 .sec-head p{color:var(--muted);font-size:1.06rem;margin:0}
 .alt{background:linear-gradient(180deg,#fff, #FDFBF7);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 
-/* OVERVIEW cards */
+/* GRID + cards */
 .grid{display:grid;gap:18px}
 .g4{grid-template-columns:repeat(4,1fr)}
 .g3{grid-template-columns:repeat(3,1fr)}
@@ -101,7 +101,7 @@ section.tight{padding:54px 0}
 .wow p{margin:0;color:var(--muted);font-size:.94rem}
 
 /* PERSON cards */
-.person{position:relative;border-radius:var(--r);padding:22px;color:#fff;overflow:hidden;min-height:172px;display:flex;flex-direction:column;justify-content:flex-end;box-shadow:var(--shadow)}
+.person{position:relative;border-radius:var(--r);padding:22px;color:#fff;overflow:hidden;min-height:182px;display:flex;flex-direction:column;justify-content:flex-end;box-shadow:var(--shadow)}
 .person:before{content:"";position:absolute;inset:0;background:var(--g);opacity:1}
 .person>*{position:relative}
 .person .who{font-family:Fraunces;font-size:1.45rem;font-weight:600}
@@ -141,6 +141,7 @@ section.tight{padding:54px 0}
 .tl h4{font-size:1.1rem;margin:1px 0 3px}
 .tl p{margin:0;color:var(--muted);font-size:.95rem}
 .tl .note{margin-top:6px;font-size:.86rem;color:var(--ink);background:#F4F1E9;border:1px solid var(--line);border-radius:10px;padding:7px 11px;display:inline-block}
+.tl .warn{margin-top:6px;font-size:.86rem;color:#7a3b00;background:#FCF4E6;border:1px solid #F0DBB6;border-radius:10px;padding:7px 11px;display:inline-block}
 
 /* TAGS */
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
@@ -152,6 +153,7 @@ section.tight{padding:54px 0}
 .t-cool{color:var(--teal);border-color:#B6DAD9;background:#E8F4F4}
 .t-walk{color:#566273;border-color:#D7DCE3;background:#EFF2F5}
 .t-sun{color:#7A5400;border-color:#EAD9AE;background:#FBF3DF}
+.t-uniq{color:#A23C2E;border-color:#E9C7BF;background:#FBEEEA}
 
 /* MEAL card */
 .meal{display:grid;grid-template-columns:1fr;gap:0;border:1px solid var(--line);border-radius:14px;background:var(--paper);overflow:hidden;margin-top:14px}
@@ -191,16 +193,18 @@ tr:last-child td{border-bottom:none}
 td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
 .total td{font-weight:700;background:#F4F1E9;font-size:1rem}
 
-/* CHECKLIST */
+/* CHECK / RESERVE */
 .check{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--paper);margin-bottom:10px;box-shadow:var(--shadow);transition:.15s}
 .check.done{opacity:.55;background:#F4F4F0}
 .check input{margin-top:4px;width:20px;height:20px;flex:0 0 auto;accent-color:var(--green);cursor:pointer}
-.check .ct{flex:1}
-.check .urg{font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;background:#FCE8E6;color:var(--red);border:1px solid #F3C9C4}
+.check .ct{flex:1;min-width:0}
+.check .urg{font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;background:#FCE8E6;color:var(--red);border:1px solid #F3C9C4;white-space:nowrap}
 .check .urg.soon{background:#FCF4E6;color:var(--amber);border-color:#F0DBB6}
 .check .urg.ok{background:#EDF8F1;color:var(--green);border-color:#BFE3CD}
-.check h4{font-size:1rem;margin:0 0 2px}
+.check h4{font-size:1rem;margin:0 0 2px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .check p{margin:0;font-size:.88rem;color:var(--muted)}
+.check .meta{font-size:.8rem;color:var(--ink);margin-top:3px}
+.check .go{display:inline-block;margin-top:7px;font-size:.83rem;font-weight:600;color:var(--blue)}
 .check.done h4{text-decoration:line-through}
 
 /* FOOTER */
@@ -239,6 +243,8 @@ footer small{color:#a8b6c9}
   #budget table{min-width:0}
   #budget th:nth-child(4),#budget td:nth-child(4){display:none}
   #budget td,#budget th{padding:11px 12px}
+  #transport table{min-width:480px}
+  #transport td,#transport th{padding:11px 12px;font-size:.86rem}
 }
 @media print{
   .nav,.menu-btn,.hero .scrim,.btnrow,.btn{display:none!important}
@@ -261,9 +267,9 @@ footer small{color:#a8b6c9}
       <a href="#food">Food</a>
       <a href="#july4">July 4th</a>
       <a href="#obama">Obama Center</a>
-      <a href="#logistics">Logistics</a>
+      <a href="#logistics">Getting around</a>
       <a href="#budget">Budget</a>
-      <a href="#checklist">Checklist</a>
+      <a href="#reserve">Reserve</a>
     </nav>
     <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navlinks">☰</button>
   </div>
@@ -277,11 +283,11 @@ footer small{color:#a8b6c9}
     <div class="pad">
       <span class="flagline">★ America’s 250th Birthday · July 4 Weekend</span>
       <h1>Chicago.</h1>
-      <p class="sub">Four days for the four of us — built for comfort, great vegetarian food, skyline views, and a Fourth of July to remember.</p>
+      <p class="sub">Four days for the four of us — comfort-first, every bite and sight a Chicago original, and a Fourth of July to remember.</p>
       <div class="meta">
         <span><b>Thu Jul 2 → Sun Jul 5, 2026</b></span><span class="dot">•</span>
         <span>The Agrawal Family</span><span class="dot">•</span>
-        <span>Home base: Streeterville</span>
+        <span>Home base: Gold Coast</span>
       </div>
       <div class="wxstrip">
         <div class="wx"><div class="d">THU · Jul 2</div><div class="ic">☀️</div><div class="t">79°</div><div class="lo">low 69° · arrival</div></div>
@@ -300,31 +306,31 @@ footer small{color:#a8b6c9}
     <div class="sec-head">
       <span class="eyebrow">The plan in one breath</span>
       <h2>A gentle pace, a full trip.</h2>
-      <p>Everything clusters tight so the parents aren’t shuttling back and forth, the hottest sun and the most walking are designed around, and there’s a real “wow” every single day. Money goes to comfort — door-to-door rides, a roomy suite, and two destination meals.</p>
+      <p>Everything clusters tight so the parents aren’t shuttling back and forth, the hottest sun and the most walking are designed around, and there’s a real “wow” every day. Nothing on this trip is generic — every restaurant and sight is a Chicago original.</p>
     </div>
 
     <div class="grid g4" style="margin:28px 0 10px">
       <div class="wow"><div class="n">1</div><div><h4>Architecture cruise</h4><p>Day one. Seated, shaded, the whole skyline — the first jaw-drop.</p></div></div>
       <div class="wow"><div class="n">2</div><div><h4>The Obama Center</h4><p>July 4th on the free campus — the heart of the trip.</p></div></div>
       <div class="wow"><div class="n">3</div><div><h4>Fireworks on the lake</h4><p>Navy Pier’s biggest-ever show, watched from the water.</p></div></div>
-      <div class="wow"><div class="n">4</div><div><h4>Two great veg meals</h4><p>ROOP & Aba — destination food, zero extra travel.</p></div></div>
+      <div class="wow"><div class="n">4</div><div><h4>Chicago-original food</h4><p>Purple Pig, ROOP &amp; Aba — James-Beard rooms, zero chains.</p></div></div>
     </div>
 
     <div class="grid g3" style="margin-top:22px">
       <div class="card"><div class="pad">
         <span class="eyebrow">Comfort, by design</span>
         <h3 style="font-size:1.25rem;margin:.3em 0">Built around the parents</h3>
-        <p style="color:var(--muted);margin:0;font-size:.95rem">Door-to-door UberXL is the default. The two longest “sits” — both cruises — double as the best views of the trip. Mom’s walking stays short; Dad ducks indoors whenever the sun bites.</p>
+        <p style="color:var(--muted);margin:0;font-size:.95rem">A hired car only when it earns its cost (airport, the July-4 crush); rideshare and a seated Metra train everywhere else. Short walks, AC escapes, and a smooth, not-bitter morning coffee dialed in for every day.</p>
       </div></div>
       <div class="card"><div class="pad">
         <span class="eyebrow">Every meal solved</span>
         <h3 style="font-size:1.25rem;margin:.3em 0">Vegetarian, egg-free, Maya-safe</h3>
-        <p style="color:var(--muted);margin:0;font-size:.95rem">Each restaurant is picked from its real, current menu — a named egg-free dish for Mom and a plain anchor for Maya, every time. No one stares at a menu with nothing to eat.</p>
+        <p style="color:var(--muted);margin:0;font-size:.95rem">Each spot is picked from its real menu — a named <b>egg-free</b> dish for Mom (with cross-contact flags where they matter) and a plain anchor for Maya, every time.</p>
       </div></div>
       <div class="card"><div class="pad">
-        <span class="eyebrow">Safe & polished</span>
-        <h3 style="font-size:1.25rem;margin:.3em 0">Streeterville the whole time</h3>
-        <p style="color:var(--muted);margin:0;font-size:.95rem">One of downtown’s most polished, lakefront pockets — walkable to the river, Navy Pier, and Millennium Park, and a clean ride to everything else.</p>
+        <span class="eyebrow">Nothing generic</span>
+        <h3 style="font-size:1.25rem;margin:.3em 0">All Chicago, all the time</h3>
+        <p style="color:var(--muted);margin:0;font-size:.95rem">Tiffany domes, glassblowing, deep dish, a JB Mediterranean room, independent roasters — if you could find it in any other city, it’s not on here.</p>
       </div></div>
     </div>
   </div>
@@ -336,13 +342,13 @@ footer small{color:#a8b6c9}
     <div class="sec-head"><span class="eyebrow">Personalized</span><h2>What this trip does for each of you.</h2></div>
     <div class="grid g4" style="margin-top:26px">
       <div class="person p-mom"><div class="tag">Mom</div><div class="who">Views and culture</div>
-        <p>Two cruises, the 360° deck, the Bean at golden hour — picturesque everywhere, with short walks and a guaranteed egg-free breakfast each morning.</p></div>
+        <p>Two cruises, the 360° deck, the Cultural Center’s Tiffany dome, the Bean — picturesque everywhere, short walks, and a smooth morning coffee she actually likes.</p></div>
       <div class="person p-dad"><div class="tag">Dad</div><div class="who">The Obama Center</div>
-        <p>Your must-do, done right — plus relaxed, good-view downtime and AC escapes from the sun. No long museum slogs.</p></div>
+        <p>Your must-do, done right — plus a rooftop pool, good views, AC escapes from the sun, and a great cup of coffee. No long museum slogs.</p></div>
       <div class="person p-maya"><div class="tag">Maya</div><div class="who">Hands-on and fun</div>
-        <p>WNDR’s immersive rooms, a make-something craft session, and a gentle pace with real rest built in — nothing dragged out.</p></div>
+        <p>Glassblowing where you make your own pieces to keep, a gentle pace with real rest, and plain, safe food at every stop — nothing dragged out.</p></div>
       <div class="person p-vik"><div class="tag">Vikram</div><div class="who">Maximum Chicago</div>
-        <p>Deep dish, Michelin-listed Indian, a rooftop, a foodie cruise — a maxed-out Chicago, with everyone happy alongside.</p></div>
+        <p>Deep dish, three James-Beard rooms, a foodie cruise — a maxed-out Chicago where every bite is a local original, everyone happy alongside.</p></div>
     </div>
   </div>
 </section>
@@ -369,36 +375,36 @@ footer small{color:#a8b6c9}
       <div class="grid g2">
         <div>
           <div class="timeline">
-            <div class="tl"><div class="time">~9:35 AM</div><h4>Land at O’Hare → private SUV</h4><p>A pre-booked Suburban-class car meets you at baggage claim. Fits four plus bags, no rideshare-lot trek.</p><div class="tags"><span class="tag-pill t-walk">No schlep</span><span class="tag-pill t-cool">AC</span></div></div>
-            <div class="tl"><div class="time">~10:45 AM</div><h4>Drop bags / early check-in</h4><p>Freshen up at the Embassy Suites, two blocks off the Mag Mile.</p></div>
-            <div class="tl"><div class="time">~12:30 PM</div><h4>Easy lunch — Eataly</h4><p>Air-conditioned, something for everyone, zero sun. A soft landing, not the big meal.</p><div class="tags"><span class="tag-pill t-cool">AC</span><span class="tag-pill t-walk">Low walk</span></div></div>
+            <div class="tl"><div class="time">~8:00 AM</div><h4>Coffee — Dollop</h4><p>345 E Ohio, Streeterville. Independent Chicago roaster; smooth, not-bitter espresso for the parents.</p></div>
+            <div class="tl"><div class="time">~9:35 AM</div><h4>Land at O’Hare → private car</h4><p>Pre-booked SUV meets you at baggage claim — fits four plus bags, no rideshare-lot trek. The one airport leg where a hired car earns its cost (see Getting around).</p><div class="tags"><span class="tag-pill t-walk">No schlep</span><span class="tag-pill t-cool">AC</span></div></div>
+            <div class="tl"><div class="time">~10:45 AM</div><h4>Check in — Viceroy Chicago</h4><p>Gold Coast: the most polished, safe pocket downtown, with a rooftop pool. Drop bags, freshen up.</p></div>
+            <div class="tl star"><div class="time">~12:30 PM ★</div><h4>Lunch — The Purple Pig</h4><p>444 N Michigan, at the foot of the Mag Mile. James Beard “Best New Restaurant” — Mediterranean small plates, deeply veg-friendly. <b>Arrive right at open or hold a Resy</b> — the line is famous and you’ll be tired.</p><div class="note">Replaces Eataly — a real Chicago room, not a food hall.</div><div class="tags"><span class="tag-pill t-uniq">Chicago original</span><span class="tag-pill t-veg">Veg-rich</span></div></div>
             <div class="tl"><div class="time">~2:30 PM</div><h4>Shaded Riverwalk sit</h4><p>A drink and the water at City Winery on the Riverwalk — Dad’s first proper relax.</p><div class="tags"><span class="tag-pill t-view">Views</span><span class="tag-pill t-sun">Shade</span></div></div>
-            <div class="tl star"><div class="time">~3:30 PM ★</div><h4>Architecture river cruise</h4><p>Chicago’s First Lady — 90 minutes, docent-narrated, the whole skyline from the water. Upstairs for photos; AC cabin below is Dad’s sun escape.</p><div class="note">The trip’s first showstopper — and nobody walks a step.</div><div class="tags"><span class="tag-pill t-view">Best views</span><span class="tag-pill t-walk">Seated</span><span class="tag-pill t-sun">Shade option</span></div></div>
+            <div class="tl star"><div class="time">~3:30 PM ★</div><h4>Architecture river cruise</h4><p>Chicago’s First Lady — 90 minutes, docent-narrated, the whole skyline from the water. AC cabin below is Dad’s sun escape.</p><div class="note">The trip’s first showstopper — and nobody walks a step.</div><div class="tags"><span class="tag-pill t-view">Best views</span><span class="tag-pill t-walk">Seated</span><span class="tag-pill t-sun">Shade option</span></div></div>
             <div class="tl"><div class="time">~5:30 PM</div><h4>Back to the hotel · rest</h4><p>Recharge before dinner.</p></div>
-            <div class="tl"><div class="time">~7:00 PM</div><h4>Dinner — Lou Malnati’s</h4><p>The deep-dish rite of passage. <b>Call ahead</b> — the pie bakes 45 minutes.</p></div>
+            <div class="tl"><div class="time">~7:00 PM</div><h4>Dinner — Lou Malnati’s</h4><p>The deep-dish rite of passage, five minutes away in River North. <b>Call ahead</b> — the pie bakes 45 minutes.</p></div>
           </div>
         </div>
         <div>
           <div class="meal">
-            <div class="mh"><div><span class="k">Lunch</span><h4>Eataly Chicago</h4></div><a class="pin" href="https://www.eataly.com/us_en/stores/chicago/" target="_blank" rel="noopener">menu ↗</a></div>
+            <div class="mh"><div><span class="k">Lunch</span><h4>The Purple Pig</h4></div><a class="pin" href="https://thepurplepigchicago.com/menus/" target="_blank" rel="noopener">menu ↗</a></div>
             <div class="mb">
-              <p class="dish"><b>Maya:</b> Margherita pizza + a side of fries — plain and safe.</p>
+              <p class="dish"><b>Maya:</b> whipped ricotta + grilled bread, fried potatoes, focaccia — plain and safe.</p>
               <ul>
-                <li><span class="t-egg tag-pill">Mom · egg-free</span> Spaghetto al Pomodoro (dried, egg-free pasta — skip the fresh egg pastas)</li>
-                <li>Wood-fired vegetable pizzas, fresh mozzarella, gelato</li>
+                <li><span class="t-egg tag-pill">Mom · egg-free</span> Whipped feta, hummus + roasted eggplant (vegan), salt-roasted beets, baked goat cheese</li>
+                <li>Vikram: a JB-winning veg spread — the iconic arrival-day stop</li>
               </ul>
-              <p class="bk">Backup: <a href="https://thepurplepigchicago.com/" target="_blank" rel="noopener"><b>The Purple Pig</b></a> — Mediterranean small plates, deeply veg-friendly, same block.</p>
+              <p class="bk">⚠️ Tell the server “lacto-veg, no eggs, no anchovy” — a couple of salads hide anchovy and the desserts contain egg. Backup: <a href="https://www.rickbayless.com/restaurants/frontera-grill/" target="_blank" rel="noopener">Frontera Grill</a> (Rick Bayless, River North sit-down).</p>
             </div>
           </div>
           <div class="meal">
-            <div class="mh"><div><span class="k">Dinner</span><h4>Lou Malnati’s (River North)</h4></div><a class="pin" href="https://www.loumalnatis.com/menu" target="_blank" rel="noopener">menu ↗</a></div>
+            <div class="mh"><div><span class="k">Dinner</span><h4>Lou Malnati’s (River North)</h4></div><a class="pin" href="https://www.loumalnatis.com/menu/" target="_blank" rel="noopener">menu ↗</a></div>
             <div class="mb">
-              <p class="dish"><b>Maya:</b> Cheese deep dish + garlic bread.</p>
+              <p class="dish"><b>Maya:</b> plain cheese deep dish — her single safest dinner of the trip.</p>
               <ul>
-                <li><span class="t-egg tag-pill">Mom · egg-free</span> Cheese deep dish, regular crust — <b>ask for no romano on top</b>; confirm the crust is egg-free when you call ahead</li>
-                <li>“The Lou” — spinach, mushroom, tomato (also egg-free)</li>
+                <li><span class="t-egg tag-pill">Mom · egg-free</span> The <b>standard</b> deep dish (the regular dough is egg-free). ⚠️ <b>NOT the Buttercrust, NOT the gluten-free crust</b> — both contain egg. Ask for <b>no romano on top</b>; confirm at the table.</li>
               </ul>
-              <p class="bk">Backup: <a href="https://www.unos.com/" target="_blank" rel="noopener"><b>Pizzeria Uno</b></a> — the 1943 birthplace of deep dish, takes reservations.</p>
+              <p class="bk">Honesty note: deep dish is unmistakably Chicago, but Lou’s is a regional chain — kept only because it’s a 5-min, low-stress arrival-night meal. Want a one-of-a-kind crust instead? <b><a href="https://www.pequodspizza.com/" target="_blank" rel="noopener">Pequod’s</a></b> caramelized “burnt-cheese” crust exists nowhere else (~15 min to Lincoln Park).</p>
             </div>
           </div>
         </div>
@@ -408,30 +414,30 @@ footer small{color:#a8b6c9}
     <!-- DAY 2 -->
     <div class="day" data-day="2">
       <div class="day-hero"><img src="assets/img/willis.jpg" alt="Willis Tower and the Loop" loading="lazy" />
-        <div class="cap"><h3>Friday · Maya’s day — hands-on & indoors</h3>
+        <div class="cap"><h3>Friday · Maya’s day — hands-on and indoors</h3>
           <div class="wxline">⛅ 80° / 64° · the wettest day — so we bank it all indoors</div></div></div>
       <div class="grid g2">
         <div>
           <div class="timeline">
-            <div class="tl"><div class="time">~9:00 AM</div><h4>Breakfast — Beatrix</h4><p>Polished, easy, with reliable egg-free options.</p></div>
-            <div class="tl star"><div class="time">~10:30 AM ★</div><h4>WNDR Museum</h4><p>Immersive, interactive rooms — not an art museum. Includes a Yayoi Kusama infinity room (a quick, timed walk-through). About an hour, all AC.</p><div class="note">Maya’s headline — make-it, touch-it, photograph-it.</div><div class="tags"><span class="tag-pill t-maya">Maya pick</span><span class="tag-pill t-cool">AC</span><span class="tag-pill t-walk">Low walk</span></div></div>
-            <div class="tl"><div class="time">~12:15 PM</div><h4>Lunch — Aba (rooftop)</h4><p>A foodie high point — and it’s right here in the West Loop, no extra travel.</p><div class="tags"><span class="tag-pill t-view">Rooftop</span><span class="tag-pill t-veg">Veg-rich</span></div></div>
-            <div class="tl star"><div class="time">~2:00 PM ★</div><h4>Hands-on craft studio</h4><p>Paint-your-own pottery or a candle/scent workshop — a seated, ~90-minute make-something session with a take-home keepsake.</p><div class="note">The thing that makes Maya’s day — and the parents get to sit.</div><div class="tags"><span class="tag-pill t-maya">Maya pick</span><span class="tag-pill t-walk">Seated</span></div></div>
-            <div class="tl"><div class="time">~3:30 PM</div><h4>Real afternoon pause</h4><p>Café or hotel downtime — written in, on purpose, to beat the cranky wall.</p></div>
-            <div class="tl"><div class="time">~5:30 PM</div><h4>Hotel downtime</h4><p>Dad’s rooftop relaxer before dinner.</p></div>
-            <div class="tl star"><div class="time">~7:00 PM ★</div><h4>Dinner — ROOP</h4><p>Michelin-listed progressive Indian, with a dedicated vegetarian tasting — the foodie “wow,” in the same cluster.</p><div class="tags"><span class="tag-pill t-veg">Veg tasting</span><span class="tag-pill t-egg">Egg-aware</span></div></div>
+            <div class="tl star"><div class="time">~8:00 AM ★</div><h4>Coffee — Sawada</h4><p>112 N Green, Fulton Market — independent and singular to Chicago, steps from Aba. The Military Latte (matcha + espresso) is a one-of-a-kind cup; a clean, smooth standard latte too.</p><div class="tags"><span class="tag-pill t-uniq">Chicago original</span></div></div>
+            <div class="tl"><div class="time">~9:00 AM</div><h4>Breakfast — Wildberry</h4><p>130 E Randolph (Chicago original). Maya: plain buttermilk pancakes + fries.</p><div class="warn">⚠️ Mom: Wildberry cooks eggs on the same griddle as the pancakes and “vegan” hash — neither is egg-safe. Mom grabs a <b>Do-Rite vegan donut</b> (egg-free) + fruit instead.</div></div>
+            <div class="tl star"><div class="time">~10:30 AM ★</div><h4>Chicago Cultural Center</h4><p>78 E Washington. Free, AC, calm — home to the world’s largest Tiffany stained-glass dome (~30,000 pieces), which exists only here. Photogenic, low-walking; sets up the afternoon glasswork.</p><div class="note">Replaces WNDR — a real Chicago landmark, not a selfie chain.</div><div class="tags"><span class="tag-pill t-uniq">One-of-a-kind</span><span class="tag-pill t-veg">Free</span><span class="tag-pill t-cool">AC</span></div></div>
+            <div class="tl"><div class="time">~12:15 PM</div><h4>Lunch — Aba (rooftop)</h4><p>302 N Green, West Loop. A foodie high point in the same cluster — no extra travel.</p><div class="tags"><span class="tag-pill t-view">Rooftop</span><span class="tag-pill t-veg">Veg-rich</span></div></div>
+            <div class="tl star"><div class="time">~2:00 PM ★</div><h4>Glassblowing — Ignite Glass Studios</h4><p>401 N Armour St, West Loop. A private lesson where <b>Maya makes 2–3 glass pieces to take home</b>; parents watch and photograph from the cool gallery.</p><div class="note">The thing that makes Maya’s day — uniquely Chicago, and the parents get to sit.</div><div class="tags"><span class="tag-pill t-maya">Maya pick</span><span class="tag-pill t-uniq">Hands-on</span><span class="tag-pill t-walk">Seated</span></div></div>
+            <div class="tl"><div class="time">~3:30 PM</div><h4>Real afternoon pause</h4><p>Café or hotel downtime — written in, to beat the cranky wall.</p></div>
+            <div class="tl star"><div class="time">~7:00 PM ★</div><h4>Dinner — ROOP</h4><p>736 W Randolph. Michelin-listed progressive Indian with a dedicated vegetarian tasting — the foodie “wow,” same cluster.</p><div class="tags"><span class="tag-pill t-veg">Veg tasting</span><span class="tag-pill t-egg">Egg-aware</span></div></div>
           </div>
         </div>
         <div>
           <div class="meal">
             <div class="mh"><div><span class="k">Lunch</span><h4>Aba</h4></div><a class="pin" href="https://abarestaurants.com/chicago/" target="_blank" rel="noopener">menu ↗</a></div>
             <div class="mb">
-              <p class="dish"><b>Maya:</b> flatbread + crispy potatoes / plain pasta — simple, named, safe.</p>
+              <p class="dish"><b>Maya:</b> laffa flatbread + crispy potatoes / plain rice — simple, named, safe.</p>
               <ul>
-                <li><span class="t-egg tag-pill">Mom · egg-free</span> Hummus, stracciatella, grilled vegetables (skip the meringue & brûlée desserts)</li>
+                <li><span class="t-egg tag-pill">Mom · egg-free</span> Hummus, stracciatella, grilled vegetables, whipped feta (skip the meringue &amp; brûlée desserts)</li>
                 <li>Vikram: the full 15-plus vegetarian spread — his big foodie meal of the trip</li>
               </ul>
-              <p class="bk">Books on <a href="https://www.exploretock.com/aba/" target="_blank" rel="noopener">Tock</a> 30 days out — the Jul 3 window opened ~Jun 3 and the rooftop goes fast, so grab it now or watch for cancellations. ROOP is the easy fallback.</p>
+              <p class="bk">Books on <a href="https://www.exploretock.com/aba/" target="_blank" rel="noopener">Tock</a> 30 days out — the Jul 3 window opened ~Jun 3 and the rooftop goes fast, so grab it now or watch cancellations.</p>
             </div>
           </div>
           <div class="meal">
@@ -439,17 +445,16 @@ footer small{color:#a8b6c9}
             <div class="mb">
               <p class="dish"><b>Maya:</b> cheese naan + paneer + rice — plain and safe.</p>
               <ul>
-                <li><span class="t-egg tag-pill">Mom · egg-free</span> The vegetarian menu is egg-aware and deeply veg — confirm egg-free on any tasting items when you reserve</li>
-                <li>Michelin-recognized; a genuine destination meal</li>
+                <li><span class="t-egg tag-pill">Mom · egg-free</span> Deeply veg, egg-aware kitchen — confirm egg-free on any tasting items when you reserve</li>
               </ul>
-              <p class="bk">Backup: <a href="https://www.google.com/maps/search/?api=1&query=Gaylord+Fine+Indian+Cuisine+Gold+Coast+Chicago" target="_blank" rel="noopener"><b>Gaylord Fine Indian</b></a> (Gold Coast) — comfort-Indian near home base.</p>
+              <p class="bk">Easy fallback in the same cluster if needed: <a href="https://www.google.com/maps/search/?api=1&amp;query=Gaylord+Fine+Indian+Gold+Coast+Chicago" target="_blank" rel="noopener">Gaylord Fine Indian</a> (Gold Coast).</p>
             </div>
           </div>
           <div class="meal">
-            <div class="mh"><div><span class="k">Breakfast</span><h4>Beatrix</h4></div><a class="pin" href="https://www.beatrixrestaurants.com/" target="_blank" rel="noopener">menu ↗</a></div>
+            <div class="mh"><div><span class="k">Breakfast</span><h4>Wildberry · Do-Rite</h4></div></div>
             <div class="mb"><ul>
-              <li><span class="t-maya tag-pill">Maya</span> Lemon pancakes</li>
-              <li><span class="t-egg tag-pill">Mom · egg-free</span> Oatmeal, fresh fruit, bakery toast — no substitution gamble</li>
+              <li><span class="t-maya tag-pill">Maya</span> Wildberry buttermilk pancakes + fries</li>
+              <li><span class="t-egg tag-pill">Mom · egg-free</span> A <a href="https://www.doritedonuts.com/" target="_blank" rel="noopener">Do-Rite</a> vegan donut (Maple Chai / Double Chocolate) + fresh fruit — Chicago-original and reliably egg-free, since Wildberry’s shared griddle isn’t</li>
             </ul></div>
           </div>
         </div>
@@ -458,50 +463,49 @@ footer small{color:#a8b6c9}
 
     <!-- DAY 3 -->
     <div class="day" data-day="3">
-      <div class="day-hero"><img src="assets/img/obama.jpg" alt="Obama Presidential Center, opening day June 2026" loading="lazy" />
+      <div class="day-hero"><img src="assets/img/obama.jpg" alt="Obama Presidential Center" loading="lazy" />
         <div class="cap"><h3>Saturday · The Fourth — Obama Center and fireworks</h3>
           <div class="wxline">🎆 77° / 68° · mostly dry · America’s 250th · dark by 10 PM</div></div></div>
       <div class="callout info" style="margin-bottom:18px">
         <h4>🧭 How the day fits together</h4>
-        <p>The Obama Center’s “People’s Fourth” runs 2–7 PM; the fireworks cruise boards ~7:30 PM at Navy Pier. <b>One private SUV is hired for the whole evening</b> — Jackson Park → hotel to freshen up → Navy Pier → post-fireworks pickup — so there’s no double-surge rideshare gamble and no walking in the dark.</p>
+        <p>Eat a real lunch downtown first, then go south for the Obama Center’s “People’s Fourth” (2–4 PM). A <b>seated Metra Electric train</b> brings you back downtown (~$28 for four, traffic-proof), then a genuine hotel rest before the fireworks cruise. Only the late Navy Pier leg uses a hired car — that’s where it earns its cost.</p>
       </div>
       <div class="grid g2">
         <div>
           <div class="timeline">
-            <div class="tl"><div class="time">Slow AM</div><h4>Sleep in · easy egg-free breakfast</h4><p>Conserve energy for a big, late night.</p></div>
-            <div class="tl"><div class="time">~12:30 PM</div><h4>A real lunch downtown</h4><p>Eat well <i>before</i> heading south, so the evening’s food is a bonus, not the only dinner.</p></div>
-            <div class="tl"><div class="time">~1:45 PM</div><h4>Hired SUV → Obama Center</h4><p>~25 min to 6001 S Stony Island. Door to door — no curbs, no unfamiliar blocks.</p><div class="tags"><span class="tag-pill t-walk">Door-to-door</span></div></div>
-            <div class="tl star"><div class="time">2:00–4:00 PM ★</div><h4>“The People’s Fourth” on the campus</h4><p>The free, brand-new 19-acre campus — architecture, gardens, public art, and a costumed brass band (~3 PM). A short, shaded loop with benches; the Forum and library are AC refuges. Hard-capped at two hours.</p><div class="note">Dad’s must-do, delivered. Maya can anchor at the music and skip the longer walk.</div><div class="tags"><span class="tag-pill t-veg">Free</span><span class="tag-pill t-sun">Shaded loop</span><span class="tag-pill t-cool">AC refuges</span></div></div>
-            <div class="tl"><div class="time">~4:00 PM</div><h4>SUV staged → hotel</h4><p>Beat the road closures; no 30-minute pickup gamble.</p></div>
-            <div class="tl"><div class="time">5:00–7:00 PM</div><h4>Genuine rest at the hotel</h4><p>Actually lie down — recharge for the late night.</p></div>
-            <div class="tl star"><div class="time">~7:15 PM ★</div><h4>Board the fireworks dinner cruise</h4><p>Spirit of Chicago from Navy Pier. Board on the early end to dodge the crush. Dinner, skyline, and the 10 PM show from the open-air deck — seated, fed, AC, no crowd-crush.</p><div class="tags"><span class="tag-pill t-view">Fireworks from the water</span><span class="tag-pill t-walk">Seated</span></div></div>
-            <div class="tl"><div class="time">~10:45 PM</div><h4>Disembark → SUV staged inland</h4><p>Pickup at Grand/Illinois, not the gridlocked pier lot. The plan is told in advance, so no one’s improvising in the dark.</p></div>
+            <div class="tl"><div class="time">~6–8 AM</div><h4>Coffee + quick bite — Do-Rite &amp; Dollop</h4><p>Do-Rite Donuts (233 E Erie, opens 6 AM). Mom: a <b>vegan donut</b> (egg-free); Maya: classic glazed. Parents’ coffee at Dollop next door. Conserve energy for a big, late night.</p></div>
+            <div class="tl"><div class="time">~12:30 PM</div><h4>A real lunch downtown</h4><p>Eat well <i>before</i> heading south, so the evening’s buffet is a bonus, not the only dinner.</p></div>
+            <div class="tl"><div class="time">~1:45 PM</div><h4>Head to the Obama Center</h4><p>6001 S Stony Island. Rideshare or Metra Electric down; ~25 min.</p></div>
+            <div class="tl star"><div class="time">2:00–4:00 PM ★</div><h4>“The People’s Fourth” on the campus</h4><p>The free, brand-new 19-acre campus — architecture, gardens, public art, and a costumed brass band (~3 PM). A short, shaded loop with benches; the Forum and library are AC refuges.</p><div class="note">Dad’s must-do, delivered. The emotional heart of the trip.</div><div class="tags"><span class="tag-pill t-veg">Free</span><span class="tag-pill t-sun">Shaded loop</span><span class="tag-pill t-cool">AC refuges</span></div></div>
+            <div class="tl"><div class="time">~4:00 PM</div><h4>Metra Electric back downtown</h4><p>57th St (Hyde Park) → Millennium Station. ~$28 for four, AC, seated, traffic-proof. <b>Verify the July-4 holiday schedule the day before.</b> A Hyde Park coffee (Plein Air Café) first, if you like.</p><div class="tags"><span class="tag-pill t-walk">Seated train</span></div></div>
+            <div class="tl"><div class="time">5:00–7:00 PM</div><h4>Genuine rest at the hotel — immovable</h4><p>Actually lie down. This block is what makes the two-leg July-4 day survivable.</p></div>
+            <div class="tl star"><div class="time">~7:15 PM ★</div><h4>Fireworks dinner cruise</h4><p>Spirit of Chicago from Navy Pier. The 10 PM show from the open-air deck — Navy Pier’s largest ever, for the 250th. Seated, AC, no crowd-crush.</p><div class="warn">⚠️ It’s an all-you-can-eat <b>buffet</b>, not plated entrées — do the phone check first (right →).</div></div>
+            <div class="tl"><div class="time">~10:45 PM</div><h4>Hired car staged inland</h4><p>Pickup at Grand/Illinois, out of the post-fireworks gridlock. The one night a guaranteed waiting car is worth it.</p></div>
           </div>
         </div>
         <div>
           <div class="callout warn">
             <h4>📞 Before you book the cruise — one call</h4>
-            <p>The cruise is the plan <b>if</b> a quick call confirms the food works for us (its standard buffet leans on sides for vegetarians). Otherwise we pivot to the reservable backup below.</p>
+            <p>It’s a lavish buffet, and the galley handles allergens openly. Book it <b>only if</b> a call confirms the food works for us — otherwise pivot to the reservable backup below.</p>
             <div class="script">Call City Cruises · 773-741-4684
 
 “Booking the July 4 Spirit of Chicago
-fireworks dinner cruise for 4. Three
-things to confirm:
- 1) A hot, EGG-FREE vegetarian entrée
-    for one guest (no egg at all).
- 2) A plain item for a picky eater —
-    plain pasta / rice / fries.
+fireworks dinner cruise for 4. Confirm:
+ 1) A clearly-labeled EGG-FREE vegetarian
+    item one guest can eat with no cross-
+    contact (no egg at all).
+ 2) A plain starch/cheese item for a
+    picky eater — pasta / rice / fries.
  3) Exact departure time, and that the
     boat is ON THE WATER at 10 PM for
     the fireworks (not docked early).”</div>
-            <p style="margin-top:10px;font-size:.86rem">All-ages ✓ (Maya is 20). Non-refundable, so confirm first. ~$128/adult.</p>
+            <p style="margin-top:10px;font-size:.86rem">All-ages ✓ (Maya is 20). Non-refundable — and the 12:30 lunch is the safety net. ~$128/adult.</p>
             <div class="btnrow"><a class="btn" href="https://www.cityexperiences.com/chicago/city-cruises/4th-july-dinner-cruise-lake-michigan/" target="_blank" rel="noopener">Cruise details ↗</a><a class="btn ghost" href="https://www.usawelcome.net/ecms/Chicago%20Dinner%20Buffet.pdf" target="_blank" rel="noopener">Buffet menu (PDF) ↗</a></div>
           </div>
           <div class="callout good" style="margin-top:16px">
             <h4>🌇 Backup — Cindy’s Rooftop</h4>
-            <p>All-ages, <b>reservable</b> terrace facing the lake, with comfort food Maya will actually eat (grilled cheese, gnocchi) and easy egg-free options for Mom. View of the Navy Pier show is real but distant. Book the terrace the day reservations open (~14 days out).</p>
-            <p style="font-size:.86rem">If you’d rather skip the cruise’s food gamble, this becomes the plan — pair it with the free <a href="https://www.grantparkmusicfestival.com/2026-concerts/" target="_blank" rel="noopener">Grant Park “Independence Day Salute”</a> at 7:30 PM, a 3-minute walk away.</p>
-            <div class="btnrow"><a class="btn ghost" href="https://www.chicagoathletichotel.com/restaurants/cindys/" target="_blank" rel="noopener">Cindy’s ↗</a></div>
+            <p>If the cruise food fails the phone check: all-ages, <b>reservable</b> terrace over Millennium Park toward the lake, with grilled cheese / gnocchi for Maya and easy egg-free plates for Mom. Pair it with the free <a href="https://www.grantparkmusicfestival.com/" target="_blank" rel="noopener">Grant Park “Independence Day Salute”</a> at 7:30 PM, a 3-minute walk away.</p>
+            <div class="btnrow"><a class="btn ghost" href="https://cindysrooftop.com/" target="_blank" rel="noopener">Cindy’s ↗</a></div>
           </div>
         </div>
       </div>
@@ -511,30 +515,26 @@ things to confirm:
     <div class="day" data-day="4">
       <div class="day-hero"><img src="assets/img/hancock.jpg" alt="360 Chicago observation tower" loading="lazy" />
         <div class="cap"><h3>Sunday · Slow morning, then home</h3>
-          <div class="wxline">🌤️ 78° / 69° · slight afternoon storm risk — keep it short & central</div></div></div>
+          <div class="wxline">🌤️ 78° / 69° · slight afternoon storm risk — keep it short &amp; central</div></div></div>
       <div class="grid g2">
         <div>
           <div class="timeline">
-            <div class="tl"><div class="time">~8:30 AM</div><h4>Breakfast — Wildberry (or hotel)</h4><p>Go early to beat the holiday-weekend wait. By Millennium Park.</p></div>
-            <div class="tl"><div class="time">~9:30 AM</div><h4>Millennium Park & the Bean</h4><p>Cloud Gate’s mirror shot and Crown Fountain — flat, paved, low-walking. (We’re flying today, so admire the fountain, don’t get soaked.)</p><div class="tags"><span class="tag-pill t-view">Iconic photos</span><span class="tag-pill t-walk">Low walk</span></div></div>
-            <div class="tl star"><div class="time">~10:30 AM ★</div><h4>360 Chicago observation deck</h4><p>Lake-facing, with a lounge to actually sit, plus “TILT” for Maya. Mom’s sit-and-photograph skyline moment to close the trip.</p><div class="tags"><span class="tag-pill t-view">Mom pick</span><span class="tag-pill t-cool">AC</span><span class="tag-pill t-walk">Seated</span></div></div>
-            <div class="tl"><div class="time">~11:15 AM</div><h4>Hotel · bags · check out</h4></div>
-            <div class="tl"><div class="time">~11:45 AM</div><h4>One ride to O’Hare, together</h4><p>Shared SUV to Terminal 1. Check in together at United, same security, split at the gates. Leave ~3 hours early for peak post-holiday travel.</p><div class="tags"><span class="tag-pill t-walk">One curb, one line</span></div></div>
+            <div class="tl"><div class="time">~8:00 AM</div><h4>Coffee — Dollop</h4><p>An easy, smooth departure-morning cup near the hotel.</p></div>
+            <div class="tl"><div class="time">~8:30 AM</div><h4>Breakfast — Wildberry (Streeterville)</h4><p>196 E Pearson; go early to beat the holiday wait. Maya: pancakes + grilled cheese.</p><div class="warn">⚠️ Same shared-griddle rule — Mom takes a Do-Rite vegan donut + fruit, not the griddle items.</div></div>
+            <div class="tl"><div class="time">~9:30 AM</div><h4>Millennium Park &amp; the Bean</h4><p>Cloud Gate’s mirror shot and Crown Fountain — flat, paved, low-walking. (We fly today, so admire the fountain, don’t get soaked.)</p><div class="tags"><span class="tag-pill t-view">Iconic photos</span><span class="tag-pill t-walk">Low walk</span></div></div>
+            <div class="tl star"><div class="time">~10:30 AM ★</div><h4>360 Chicago observation deck</h4><p>875 N Michigan — lake-facing, with a lounge to actually sit, plus “TILT” for Maya. Mom’s closing skyline-photo moment.</p><div class="tags"><span class="tag-pill t-view">Mom pick</span><span class="tag-pill t-cool">AC</span><span class="tag-pill t-walk">Seated</span></div></div>
+            <div class="tl"><div class="time">~11:45 AM</div><h4>One UberXL to O’Hare, together</h4><p>Rested and predictable — no hired car needed Sunday. Terminal 1; check in together at United, same security, split at the gates. Leave ~3 hours early for peak post-holiday travel.</p><div class="tags"><span class="tag-pill t-walk">One curb, one line</span></div></div>
             <div class="tl"><div class="time">2:13 / 3:26 PM</div><h4>Fly home — nonstop</h4><p>Family → RDU; Vikram → SFO. Both United nonstops from Terminal 1, ~73 minutes apart.</p></div>
           </div>
         </div>
         <div>
-          <div class="meal">
-            <div class="mh"><div><span class="k">Breakfast</span><h4>Wildberry Pancakes</h4></div><a class="pin" href="https://www.wildberrycafe.com/" target="_blank" rel="noopener">menu ↗</a></div>
-            <div class="mb"><ul>
-              <li><span class="t-maya tag-pill">Maya / Dad / Vikram</span> Buttermilk pancakes (contain egg)</li>
-              <li><span class="t-egg tag-pill">Mom · egg-free</span> Vegan Breakfast Hash, or oatmeal + fruit + toast (all pancakes/crêpes/French toast contain egg)</li>
-            </ul>
-            <p class="bk">Backup: Beatrix, or the hotel’s free made-to-order breakfast.</p></div>
-          </div>
           <div class="callout info">
-            <h4>📍 Open decision · the deck</h4>
-            <p>360 Chicago is the recommended close. If energy’s low, the <b>Centennial Wheel</b> at Navy Pier is an even easier seated view ride — or skip a formal deck entirely, since both cruises already deliver elite skyline views.</p>
+            <h4>☕ The coffee, every day</h4>
+            <p>Both parents get a smooth, not-bitter, genuinely-Chicago cup each morning — independent roasters, never a chain. The full rundown is in <a href="#food">the food section</a>.</p>
+          </div>
+          <div class="callout good" style="margin-top:16px">
+            <h4>📍 One last decision</h4>
+            <p>360 Chicago is the recommended close. If energy’s low, swap in the <b>Centennial Wheel</b> at Navy Pier (AC gondola, seated) — or skip a formal deck, since both cruises already deliver elite skyline views.</p>
           </div>
         </div>
       </div>
@@ -547,20 +547,36 @@ things to confirm:
 <section class="alt" id="food">
   <div class="wrap">
     <div class="sec-head"><span class="eyebrow">The food program</span><h2>Where we eat — and what.</h2>
-      <p>Every pick is vegetarian-rich (not a token option or two), with a named <span class="t-egg tag-pill">egg-free</span> dish for Mom and a plain <span class="t-maya tag-pill">Maya-safe</span> anchor. Tap any menu to see for yourself.</p>
+      <p>Every pick is a Chicago original — institutions, James-Beard rooms, neighborhood gems. No chains. Each has a named <span class="t-egg tag-pill">egg-free</span> dish for Mom and a plain <span class="t-maya tag-pill">Maya-safe</span> anchor, pulled from the real menu.</p>
     </div>
     <div class="grid g3" style="margin-top:26px">
-      <div class="rcard"><img src="assets/img/deepdish.jpg" alt="Chicago deep dish pizza" loading="lazy" style="height:160px;object-fit:cover"><div class="rh"><div class="hood">River North · Iconic</div><h4>Lou Malnati’s</h4></div><div class="rb">The deep-dish rite of passage. Cheese pie for Maya; egg-free with “no romano on top” for Mom. Call ahead — 45-min bake.</div><div class="rf"><span class="tags"><span class="tag-pill t-egg">egg-free</span><span class="tag-pill t-maya">Maya</span></span><a href="https://www.loumalnatis.com/menu" target="_blank" rel="noopener">menu ↗</a></div></div>
+      <div class="rcard"><div class="rh" style="padding-top:18px"><div class="hood">Mag Mile · JB room ★</div><h4>The Purple Pig</h4></div><div class="rb">James Beard “Best New Restaurant.” Mediterranean small plates, deeply veg-friendly. Whipped feta, hummus + eggplant, beets for Mom; ricotta + bread, fried potatoes for Maya. <i>(Replaces Eataly.)</i></div><div class="rf"><span class="tags"><span class="tag-pill t-uniq">original</span><span class="tag-pill t-egg">egg-free</span></span><a href="https://thepurplepigchicago.com/menus/" target="_blank" rel="noopener">menu ↗</a></div></div>
 
-      <div class="rcard"><div class="rh" style="padding-top:18px"><div class="hood">West Loop · Foodie ★</div><h4>ROOP</h4></div><div class="rb">Michelin-listed progressive Indian with a dedicated vegetarian tasting. Cheese naan, paneer & rice keep it simple for Maya; egg-aware kitchen for Mom.</div><div class="rf"><span class="tags"><span class="tag-pill t-veg">veg tasting</span><span class="tag-pill t-egg">egg-aware</span></span><a href="https://www.opentable.com/r/roop-chicago" target="_blank" rel="noopener">reserve ↗</a></div></div>
+      <div class="rcard"><img src="assets/img/deepdish.jpg" alt="Chicago deep dish pizza" loading="lazy" style="height:160px;object-fit:cover"><div class="rh"><div class="hood">River North · Iconic</div><h4>Lou Malnati’s</h4></div><div class="rb">The deep-dish rite of passage. Cheese pie for Maya; the standard (egg-free) dough for Mom — <b>no Buttercrust, no GF crust, no romano on top</b>. Unique-crust swap: Pequod’s.</div><div class="rf"><span class="tags"><span class="tag-pill t-egg">egg-free</span><span class="tag-pill t-maya">Maya</span></span><a href="https://www.loumalnatis.com/menu/" target="_blank" rel="noopener">menu ↗</a></div></div>
 
-      <div class="rcard"><div class="rh" style="padding-top:18px"><div class="hood">West Loop · Rooftop ★</div><h4>Aba</h4></div><div class="rb">A veg-rich Mediterranean rooftop — 15+ vegetarian plates. Hummus, stracciatella & grilled veg for Mom; flatbread + fries for Maya.</div><div class="rf"><span class="tags"><span class="tag-pill t-view">rooftop</span><span class="tag-pill t-veg">veg-rich</span></span><a href="https://abarestaurants.com/chicago/" target="_blank" rel="noopener">menu ↗</a></div></div>
+      <div class="rcard"><div class="rh" style="padding-top:18px"><div class="hood">West Loop · Foodie ★</div><h4>ROOP</h4></div><div class="rb">Michelin-listed progressive Indian with a dedicated vegetarian tasting. Cheese naan, paneer &amp; rice keep it simple for Maya; egg-aware kitchen for Mom.</div><div class="rf"><span class="tags"><span class="tag-pill t-veg">veg tasting</span><span class="tag-pill t-egg">egg-aware</span></span><a href="https://www.opentable.com/r/roop-chicago" target="_blank" rel="noopener">reserve ↗</a></div></div>
 
-      <div class="rcard"><img src="assets/img/navypier.jpg" alt="Navy Pier" loading="lazy" style="height:160px;object-fit:cover"><div class="rh"><div class="hood">Navy Pier · July 4 ★</div><h4>Spirit of Chicago cruise</h4></div><div class="rb">Fireworks dinner cruise from the water. Plain pasta/potatoes for Maya; a hot egg-free entrée for Mom must be confirmed by phone first.</div><div class="rf"><span class="tags"><span class="tag-pill t-view">on the lake</span><span class="tag-pill t-maya">Maya</span></span><a href="https://www.cityexperiences.com/chicago/city-cruises/4th-july-dinner-cruise-lake-michigan/" target="_blank" rel="noopener">details ↗</a></div></div>
+      <div class="rcard"><div class="rh" style="padding-top:18px"><div class="hood">West Loop · Rooftop ★</div><h4>Aba</h4></div><div class="rb">A veg-rich Mediterranean rooftop — 15+ vegetarian plates. Hummus, stracciatella &amp; grilled veg for Mom; laffa flatbread + crispy potatoes for Maya.</div><div class="rf"><span class="tags"><span class="tag-pill t-view">rooftop</span><span class="tag-pill t-veg">veg-rich</span></span><a href="https://www.exploretock.com/aba/" target="_blank" rel="noopener">book ↗</a></div></div>
 
-      <div class="rcard"><div class="rh" style="padding-top:18px"><div class="hood">The Loop · Rooftop backup</div><h4>Cindy’s Rooftop</h4></div><div class="rb">All-ages terrace over Millennium Park toward the lake. Grilled cheese & gnocchi Maya will eat; easy egg-free plates for Mom. Reservable.</div><div class="rf"><span class="tags"><span class="tag-pill t-view">view</span><span class="tag-pill t-maya">Maya</span></span><a href="https://www.chicagoathletichotel.com/restaurants/cindys/" target="_blank" rel="noopener">menu ↗</a></div></div>
+      <div class="rcard"><img src="assets/img/navypier.jpg" alt="Navy Pier" loading="lazy" style="height:160px;object-fit:cover"><div class="rh"><div class="hood">Navy Pier · July 4 ★</div><h4>Spirit of Chicago cruise</h4></div><div class="rb">Fireworks dinner cruise from the water — a Chicago lakefront tradition. It’s a buffet; confirm a hot egg-free veg item for Mom + a plain item for Maya by phone first.</div><div class="rf"><span class="tags"><span class="tag-pill t-view">on the lake</span><span class="tag-pill t-maya">Maya</span></span><a href="https://www.cityexperiences.com/chicago/city-cruises/4th-july-dinner-cruise-lake-michigan/" target="_blank" rel="noopener">details ↗</a></div></div>
 
-      <div class="rcard"><div class="rh" style="padding-top:18px"><div class="hood">River North · Easy</div><h4>Eataly · Beatrix · Wildberry</h4></div><div class="rb">The reliable, AC, something-for-everyone fillers — lunch on arrival, breakfasts with egg-free options for Mom every morning.</div><div class="rf"><span class="tags"><span class="tag-pill t-cool">AC</span><span class="tag-pill t-maya">Maya</span></span><a href="https://www.eataly.com/us_en/stores/chicago/" target="_blank" rel="noopener">Eataly ↗</a></div></div>
+      <div class="rcard"><div class="rh" style="padding-top:18px"><div class="hood">Streeterville · Mornings</div><h4>Do-Rite · Wildberry</h4></div><div class="rb">Chicago originals for breakfast: Do-Rite’s <b>vegan (egg-free) donuts</b> are Mom’s reliable morning fix; Wildberry’s pancakes are Maya’s. (Mom skips Wildberry’s shared egg griddle.)</div><div class="rf"><span class="tags"><span class="tag-pill t-uniq">original</span><span class="tag-pill t-egg">egg-free</span></span><a href="https://www.doritedonuts.com/" target="_blank" rel="noopener">Do-Rite ↗</a></div></div>
+    </div>
+
+    <div class="callout" style="margin-top:26px">
+      <h4>☕ The coffee program — smooth, never bitter, all Chicago</h4>
+      <p style="margin-bottom:10px">Both parents need a great morning cup. These are independent Chicago roasters with clean, balanced (not bitter) espresso — no chains.</p>
+      <div class="tablewrap">
+        <table style="min-width:0">
+          <thead><tr><th>Day</th><th>Coffee</th><th>Why</th></tr></thead>
+          <tbody>
+            <tr><td>Thu / Sat / Sun</td><td><b>Dollop</b> · 345 E Ohio</td><td>Independent Streeterville roaster since ’05; smooth, well-pulled, in-cluster.</td></tr>
+            <tr><td>Fri</td><td><b>Sawada</b> · 112 N Green</td><td>Singular West Loop spot by Aba — clean latte or the one-of-a-kind Military Latte.</td></tr>
+            <tr><td>Sat PM</td><td><b>Plein Air Café</b> · Hyde Park</td><td>Smooth, local, AC — the cup for the Obama Center afternoon.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:10px;font-size:.86rem;color:var(--muted)">Note: Intelligentsia (53 E Randolph) is a fine lighter-roast alternative by Millennium Park, but it’s majority JAB/Peet’s-owned now — hence the independents lead.</p>
     </div>
   </div>
 </section>
@@ -569,17 +585,17 @@ things to confirm:
 <section id="july4">
   <div class="wrap">
     <div class="sec-head"><span class="eyebrow">The main event</span><h2>The Fourth of July, the big way.</h2>
-      <p>It’s America’s 250th — and Navy Pier is staging its <b>largest, longest fireworks show in its history</b> — 15 minutes at 10 PM, choreographed over the lake. We watch it from the water.</p>
+      <p>It’s America’s 250th — and Navy Pier is staging its <b>largest, longest fireworks show in its history</b>, 15 minutes at 10 PM over the lake. We watch it from the water.</p>
     </div>
     <img src="assets/img/fireworks.jpg" alt="Fourth of July fireworks over the lake" loading="lazy" style="width:100%;height:230px;object-fit:cover;border-radius:var(--r);box-shadow:var(--shadow);margin:22px 0 4px" />
     <div class="grid g3" style="margin-top:18px">
       <div class="card"><div class="pad"><span class="eyebrow">10:00 PM</span><h3 style="font-size:1.2rem;margin:.3em 0">The show</h3><p style="color:var(--muted);margin:0;font-size:.94rem">~15 minutes, the largest in Navy Pier history, launched over Lake Michigan for the 250th. Full dark by 10.</p></div></div>
       <div class="card"><div class="pad"><span class="eyebrow">Our seats</span><h3 style="font-size:1.2rem;margin:.3em 0">From the water</h3><p style="color:var(--muted);margin:0;font-size:.94rem">A seated dinner cruise with an open-air deck — the most comfortable view in the city, away from the worst of the crowds.</p></div></div>
-      <div class="card"><div class="pad"><span class="eyebrow">Getting home</span><h3 style="font-size:1.2rem;margin:.3em 0">SUV staged inland</h3><p style="color:var(--muted);margin:0;font-size:.94rem">Our driver waits a block off the pier, not in the gridlock — no improvised walk in the dark.</p></div></div>
+      <div class="card"><div class="pad"><span class="eyebrow">Getting home</span><h3 style="font-size:1.2rem;margin:.3em 0">Car staged inland</h3><p style="color:var(--muted);margin:0;font-size:.94rem">The one night a hired car earns its keep — waiting a block off the pier, out of the gridlock.</p></div></div>
     </div>
     <div class="callout" style="margin-top:22px;background:#0B2545;color:#EAF2F8;border:none">
-      <h4 style="color:#fff">Also on July 4, if you want more 250th</h4>
-      <p style="color:#cdd8e6">The <a href="https://www.grantparkmusicfestival.com/2026-concerts/" target="_blank" rel="noopener" style="color:var(--sky)">Grant Park Music Festival “Independence Day Salute”</a> (7:30 PM, free, Millennium Park) and the Obama Center’s own community celebration both run the same day — built into the afternoon plan. See the <a href="#itinerary" style="color:var(--sky)" onclick="showDay(3)">Saturday timeline</a> for how it all threads together.</p>
+      <h4 style="color:#fff">The daytime, same day</h4>
+      <p style="color:#cdd8e6">The Obama Center’s “People’s Fourth” runs the afternoon, and a seated Metra train brings you back downtown before the evening — all threaded together on the <a href="#itinerary" style="color:var(--sky)" onclick="showDay(3)">Saturday timeline</a>. The free <a href="https://www.grantparkmusicfestival.com/" target="_blank" rel="noopener" style="color:var(--sky)">Grant Park “Independence Day Salute”</a> (7:30 PM) is the backup plan if the cruise food doesn’t check out.</p>
     </div>
   </div>
 </section>
@@ -608,7 +624,7 @@ things to confirm:
   </div>
 </section>
 
-<!-- LOGISTICS -->
+<!-- GETTING AROUND -->
 <section id="logistics">
   <div class="wrap">
     <div class="sec-head"><span class="eyebrow">The moving parts</span><h2>Flights, hotel and getting around.</h2></div>
@@ -618,41 +634,56 @@ things to confirm:
         <h3 style="font-size:1.3rem;margin:.3em 0">One terminal, both ways</h3>
         <p style="color:var(--muted);font-size:.95rem;margin:.2em 0">The Sunday split drives the choice: one airline means one curb, one security line, and we only separate at the gates. Every leg is a United nonstop — no connections for anyone.</p>
         <table style="min-width:0;margin-top:12px"><tbody>
-          <tr><td><b>Thu Jul 2 · out</b></td><td>RDU → ORD <b>nonstop</b>, ~8:00 AM (~2h35m), all four together</td></tr>
+          <tr><td><b>Thu Jul 2 · out</b></td><td>RDU → ORD <b>nonstop</b>, ~8:00 AM, all four together</td></tr>
           <tr><td><b>Sun Jul 5 · family</b></td><td>ORD → RDU <b>nonstop</b>, ~2:13 PM (Terminal 1)</td></tr>
           <tr><td><b>Sun Jul 5 · Vikram</b></td><td>ORD → SFO <b>nonstop</b>, ~3:26 PM (Terminal 1)</td></tr>
         </tbody></table>
-        <p class="pin" style="margin-top:10px">RDU→ORD has frequent morning nonstops (from ~6:40 AM) — aim for the ~7:30–8:00 AM departure to land mid-morning with the afternoon free. All three legs are United nonstops. Add Economy Plus legroom for Mom and Dad, and verify exact flight numbers/times at booking — book soon, holiday demand.</p>
+        <p class="pin" style="margin-top:10px">Aim for the ~7:30–8 AM RDU→ORD nonstop to land mid-morning. Add Economy Plus legroom for the parents; verify exact flight numbers at booking — book soon, holiday demand.</p>
       </div></div>
       <div class="card"><div class="pad">
-        <span class="eyebrow">Hotel · Streeterville</span>
-        <h3 style="font-size:1.3rem;margin:.3em 0">Embassy Suites, Mag Mile</h3>
-        <p style="color:var(--muted);font-size:.95rem;margin:.2em 0">A two-room suite for all four — privacy plus togetherness — and a <b>free made-to-order breakfast daily</b> that quietly solves Mom’s egg-free morning. ~$1,250 for three nights, in a safe, polished pocket two blocks off the Mag Mile.</p>
-        <p style="font-size:.9rem;margin:.4em 0 0"><b>Considered & passed:</b> two rooms at The Wade (lakefront W rebrand) — better views, but no included breakfast, weaker reviews, and ~$1,450 more. Easy to flip if the lake view wins out.</p>
-        <div class="btnrow"><a class="btn ghost" href="https://www.hilton.com/en/hotels/chirees-embassy-suites-chicago-downtown-magnificent-mile/" target="_blank" rel="noopener">Embassy Suites ↗</a></div>
+        <span class="eyebrow">Hotel · Gold Coast</span>
+        <h3 style="font-size:1.3rem;margin:.3em 0">Viceroy Chicago</h3>
+        <p style="color:var(--muted);font-size:.95rem;margin:.2em 0">1118 N State St — the most polished, safe pocket downtown, with a genuine Chicago-boutique feel, lake/skyline views, and the area’s only true <b>rooftop pool</b> (Dad’s relax). A 2-Queen Lake View sleeps four; book two rooms if you want space. ~$1,560 (one room) / ~$2,800 (two), 3 nights.</p>
+        <p style="font-size:.9rem;margin:.4em 0 0"><b>Alternatives in the same area:</b> <a href="https://www.hilton.com/en/hotels/chiccqq-londonhouse-chicago/" target="_blank" rel="noopener">LondonHouse</a> (value; best river-view rooftop, no pool) · <a href="https://www.langhamhotels.com/en/the-langham/chicago/" target="_blank" rel="noopener">The Langham</a> (splurge; 67-ft indoor pool + spa). <i>Breakfast is no longer a factor — we eat Chicago originals out.</i></p>
+        <div class="btnrow"><a class="btn ghost" href="https://www.viceroyhotelsandresorts.com/chicago" target="_blank" rel="noopener">Viceroy Chicago ↗</a></div>
       </div></div>
     </div>
-    <div class="grid g3" style="margin-top:18px">
-      <div class="card"><div class="pad"><span class="eyebrow">Getting around</span><h3 style="font-size:1.15rem;margin:.3em 0">UberXL, door to door</h3><p style="color:var(--muted);font-size:.93rem;margin:0">The default everywhere — comfortable for the parents. Two rides (both cruises) are the views themselves. Budget ~$650 for all ground transport.</p></div></div>
-      <div class="card"><div class="pad"><span class="eyebrow">To the Obama Center</span><h3 style="font-size:1.15rem;margin:.3em 0">~25 min south</h3><p style="color:var(--muted);font-size:.93rem;margin:0">Private SUV hired for all of July 4 — the drop is right at the campus entrance, so there’s no parking hunt and no extra walking in the heat.</p></div></div>
-      <div class="card"><div class="pad"><span class="eyebrow">Mom’s comfort</span><h3 style="font-size:1.15rem;margin:.3em 0">Polished and safe</h3><p style="color:var(--muted);font-size:.93rem;margin:0">Streeterville, the Mag Mile, the Riverwalk and the campus are all polished, busy, and easy to enjoy — with door-to-door rides making getting around effortless.</p></div></div>
+
+    <div id="transport" style="margin-top:22px">
+      <span class="eyebrow">Getting around · with the numbers</span>
+      <h3 style="font-size:1.3rem;margin:.3em 0 4px">The hired car earns its cost exactly twice.</h3>
+      <p style="color:var(--muted);font-size:.95rem;margin:0 0 14px">Airport arrival and the July-4 Navy Pier crush. Everywhere else, rideshare or a seated Metra train wins — so the “private SUV” isn’t a blanket expense, it’s two targeted splurges.</p>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Leg</th><th>Mode</th><th class="num">Cost</th><th>vs. the alternative</th></tr></thead>
+          <tbody>
+            <tr><td>Thu · O’Hare → hotel</td><td><b>Private SUV</b> (meet &amp; greet)</td><td class="num">$150–180</td><td>UberXL ~$55–110. Delta buys baggage help + no surge on tired day one.</td></tr>
+            <tr><td>Daily · short hops</td><td>Rideshare (UberX/XL)</td><td class="num">$120–200</td><td>$10–28 a leg; parents skip the July heat-walks.</td></tr>
+            <tr><td>Sat PM · Obama → downtown</td><td><b>Metra Electric</b> day pass ×4</td><td class="num">~$28</td><td>vs. UberXL ~$45–75 holiday surge. AC, seated, traffic-proof.</td></tr>
+            <tr><td>Sat night · Navy Pier RT</td><td><b>Hired SUV</b>, ~3-hr block</td><td class="num">$330–420</td><td>vs. rideshare ~$110–200 — but a guaranteed car beats stranding 4 people on the worst surge night.</td></tr>
+            <tr><td>Sun · hotel → O’Hare</td><td>Rideshare UberXL</td><td class="num">$55–80</td><td>Rested, predictable — no hired car needed.</td></tr>
+            <tr class="total"><td>Total ground transport</td><td></td><td class="num">~$700–910</td><td>Comfortably inside budget.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="pin" style="margin-top:10px">Skip the Blue Line on arrival (packed with luggage, drops in the Loop not Gold Coast). Book the July-4 evening car 2–4 weeks out with a written all-in quote including the post-fireworks wait.</p>
     </div>
 
     <div style="margin-top:26px">
       <span class="eyebrow">Key addresses · tap to open in Maps</span>
       <div class="addrgrid grid g3" style="margin-top:14px">
-        <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=511+N+Columbus+Dr+Chicago+IL" target="_blank" rel="noopener"><div class="pad" style="padding:13px 16px"><b>🏠 Embassy Suites</b><br><span style="color:var(--muted);font-size:.84rem">Home base · 511 N Columbus Dr</span></div></a>
-        <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=112+E+Wacker+Dr+Chicago+IL" target="_blank" rel="noopener"><div class="pad" style="padding:13px 16px"><b>⛵ Architecture cruise</b><br><span style="color:var(--muted);font-size:.84rem">Dock · 112 E Wacker Dr</span></div></a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=Viceroy+Chicago+1118+N+State+St" target="_blank" rel="noopener"><div class="pad" style="padding:13px 16px"><b>🏠 Viceroy Chicago</b><br><span style="color:var(--muted);font-size:.84rem">Home base · 1118 N State St</span></div></a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=The+Purple+Pig+444+N+Michigan+Chicago" target="_blank" rel="noopener"><div class="pad" style="padding:13px 16px"><b>🐷 The Purple Pig</b><br><span style="color:var(--muted);font-size:.84rem">Lunch · 444 N Michigan Ave</span></div></a>
         <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=Lou+Malnatis+439+N+Wells+St+Chicago" target="_blank" rel="noopener"><div class="pad" style="padding:13px 16px"><b>🍕 Lou Malnati’s</b><br><span style="color:var(--muted);font-size:.84rem">439 N Wells St</span></div></a>
-        <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=Eataly+43+E+Ohio+St+Chicago" target="_blank" rel="noopener"><div class="pad" style="padding:13px 16px"><b>🍝 Eataly</b><br><span style="color:var(--muted);font-size:.84rem">43 E Ohio St</span></div></a>
-        <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=WNDR+Museum+1130+W+Monroe+Chicago" target="_blank" rel="noopener"><div class="pad" style="padding:13px 16px"><b>🎨 WNDR Museum</b><br><span style="color:var(--muted);font-size:.84rem">1130 W Monroe St</span></div></a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=Chicago+Cultural+Center+78+E+Washington" target="_blank" rel="noopener"><div class="pad" style="padding:13px 16px"><b>🏛️ Cultural Center</b><br><span style="color:var(--muted);font-size:.84rem">78 E Washington St</span></div></a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=Ignite+Glass+Studios+401+N+Armour+Chicago" target="_blank" rel="noopener"><div class="pad" style="padding:13px 16px"><b>🔥 Ignite Glass</b><br><span style="color:var(--muted);font-size:.84rem">401 N Armour St</span></div></a>
         <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=Aba+302+N+Green+St+Chicago" target="_blank" rel="noopener"><div class="pad" style="padding:13px 16px"><b>🌿 Aba</b><br><span style="color:var(--muted);font-size:.84rem">302 N Green St</span></div></a>
         <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=ROOP+736+W+Randolph+Chicago" target="_blank" rel="noopener"><div class="pad" style="padding:13px 16px"><b>🍛 ROOP</b><br><span style="color:var(--muted);font-size:.84rem">736 W Randolph St</span></div></a>
         <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=Obama+Presidential+Center+Chicago" target="_blank" rel="noopener"><div class="pad" style="padding:13px 16px"><b>🏛️ Obama Center</b><br><span style="color:var(--muted);font-size:.84rem">6001 S Stony Island Ave</span></div></a>
-        <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=Spirit+of+Chicago+600+E+Grand+Ave+Chicago" target="_blank" rel="noopener"><div class="pad" style="padding:13px 16px"><b>🎆 Fireworks cruise</b><br><span style="color:var(--muted);font-size:.84rem">Navy Pier · 600 E Grand Ave</span></div></a>
-        <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=Cindys+Rooftop+12+S+Michigan+Chicago" target="_blank" rel="noopener"><div class="pad" style="padding:13px 16px"><b>🌇 Cindy’s Rooftop</b><br><span style="color:var(--muted);font-size:.84rem">Backup · 12 S Michigan Ave</span></div></a>
-        <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=360+Chicago+875+N+Michigan+Chicago" target="_blank" rel="noopener"><div class="pad" style="padding:13px 16px"><b>🌃 360 Chicago</b><br><span style="color:var(--muted);font-size:.84rem">875 N Michigan Ave</span></div></a>
-        <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=Cloud+Gate+Millennium+Park+Chicago" target="_blank" rel="noopener"><div class="pad" style="padding:13px 16px"><b>✨ The Bean</b><br><span style="color:var(--muted);font-size:.84rem">Millennium Park · 201 E Randolph</span></div></a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=Spirit+of+Chicago+600+E+Grand+Ave" target="_blank" rel="noopener"><div class="pad" style="padding:13px 16px"><b>🎆 Fireworks cruise</b><br><span style="color:var(--muted);font-size:.84rem">Navy Pier · 600 E Grand Ave</span></div></a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=Do-Rite+Donuts+233+E+Erie+Chicago" target="_blank" rel="noopener"><div class="pad" style="padding:13px 16px"><b>🍩 Do-Rite Donuts</b><br><span style="color:var(--muted);font-size:.84rem">Breakfast · 233 E Erie St</span></div></a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=Sawada+Coffee+112+N+Green+Chicago" target="_blank" rel="noopener"><div class="pad" style="padding:13px 16px"><b>☕ Sawada Coffee</b><br><span style="color:var(--muted);font-size:.84rem">112 N Green St</span></div></a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=360+Chicago+875+N+Michigan" target="_blank" rel="noopener"><div class="pad" style="padding:13px 16px"><b>🌃 360 Chicago</b><br><span style="color:var(--muted);font-size:.84rem">875 N Michigan Ave</span></div></a>
       </div>
     </div>
   </div>
@@ -662,43 +693,65 @@ things to confirm:
 <section class="alt" id="budget">
   <div class="wrap">
     <div class="sec-head"><span class="eyebrow">The money</span><h2>Budget.</h2>
-      <p>The recommended build lands comfortably under the $7,500–8,000 target, leaving room to add or upgrade. A comfort-max version (lakefront view hotel) still sits under the $10k ceiling.</p>
+      <p>The recommended build lands comfortably under the $7,500–8,000 target. A comfort-max version (Langham splurge, two rooms) still sits under the $10k ceiling.</p>
     </div>
     <div class="tablewrap" style="margin-top:24px">
       <table>
         <thead><tr><th>Category</th><th class="num">Recommended</th><th class="num">Comfort+</th><th>Notes</th></tr></thead>
         <tbody>
-          <tr><td>Flights (4)</td><td class="num">$1,450</td><td class="num">$1,650</td><td>Family round-trip ×3 + Vikram one-way to SFO + legroom</td></tr>
-          <tr><td>Hotel · 3 nights</td><td class="num">$1,250</td><td class="num">$3,400</td><td>Embassy suite (breakfast incl.) · or lakefront view hotel</td></tr>
-          <tr><td>Food</td><td class="num">$1,700</td><td class="num">$1,900</td><td>Free breakfast offsets; ROOP + Aba at the top end</td></tr>
-          <tr><td>Activities & tickets</td><td class="num">$1,300</td><td class="num">$1,400</td><td>Arch cruise ~$230 · WNDR ~$145 · craft ~$150 · 360° ~$120 · fireworks cruise ~$550 · Obama free</td></tr>
-          <tr><td>Ground transport</td><td class="num">$650</td><td class="num">$700</td><td>Airport SUV · July-4 evening SUV · daily rides</td></tr>
-          <tr><td>Buffer</td><td class="num">$450</td><td class="num">$600</td><td>Surge, tips, souvenirs, day-of flex</td></tr>
-          <tr class="total"><td>Total</td><td class="num">~$6,800</td><td class="num">~$9,650</td><td>Under target · under the $10k cap</td></tr>
+          <tr><td>Flights (4)</td><td class="num">$1,450</td><td class="num">$1,650</td><td>Family round-trip ×3 + Vikram one-way to SFO + legroom · all nonstop</td></tr>
+          <tr><td>Hotel · 3 nights</td><td class="num">$1,560</td><td class="num">$2,600</td><td>Viceroy 2-Queen (sleeps 4) · or Langham splurge / two rooms</td></tr>
+          <tr><td>Food</td><td class="num">$1,700</td><td class="num">$1,900</td><td>Purple Pig · ROOP · Aba at the top end; Chicago coffee + donuts</td></tr>
+          <tr><td>Activities &amp; tickets</td><td class="num">$1,250</td><td class="num">$1,350</td><td>Arch cruise ~$230 · Ignite glass ~$240 · 360° ~$120 · fireworks cruise ~$550 · Cultural Center &amp; Obama FREE</td></tr>
+          <tr><td>Ground transport</td><td class="num">$800</td><td class="num">$900</td><td>Airport SUV · July-4 evening SUV · Metra · daily rideshare</td></tr>
+          <tr><td>Buffer</td><td class="num">$500</td><td class="num">$600</td><td>Surge, tips, souvenirs, day-of flex</td></tr>
+          <tr class="total"><td>Total</td><td class="num">~$7,260</td><td class="num">~$9,000</td><td>Under target · under the $10k cap</td></tr>
         </tbody>
       </table>
     </div>
   </div>
 </section>
 
-<!-- CHECKLIST -->
-<section id="checklist">
+<!-- RESERVE -->
+<section id="reserve">
   <div class="wrap">
-    <div class="sec-head"><span class="eyebrow">Lock it in</span><h2>Booking checklist.</h2>
-      <p>In order of urgency — the holiday-weekend items sell out first. Tap to check off; your progress is saved on this device.</p>
+    <div class="sec-head"><span class="eyebrow">Lock it in</span><h2>Reservations control center.</h2>
+      <p>In order of urgency. Each link opens straight to your <b>date, time, and party of 4</b> so you can check live availability and book in one tap. Tap the checkbox to mark it done — your progress saves on this device.</p>
     </div>
-    <div style="margin-top:24px" id="checks">
-      <label class="check"><input type="checkbox" data-k="c1"><div class="ct"><h4>☎️ Call City Cruises to confirm the July 4 cruise food <span class="urg">Do first</span></h4><p>Egg-free hot veg entrée for Mom + plain item for Maya + on-the-water-at-10 PM. Then book — it’s non-refundable and sells out. 773-741-4684.</p></div></label>
-      <label class="check"><input type="checkbox" data-k="c2"><div class="ct"><h4>✈️ Book United flights — all nonstop <span class="urg">Do first</span></h4><p>Out Jul 2 (all 4); return Jul 5 — family→RDU, Vikram→SFO, both Terminal 1. Pick the nonstop on each leg, confirm flight numbers, add legroom for the parents.</p></div></label>
-      <label class="check"><input type="checkbox" data-k="c3"><div class="ct"><h4>🏨 Book Embassy Suites — 2-room suite (request a high floor) <span class="urg soon">This week</span></h4><p>Jul 2–5. Holiday weekend — lock the rate now.</p></div></label>
-      <label class="check"><input type="checkbox" data-k="c4"><div class="ct"><h4>⛵ Book the architecture river cruise <span class="urg soon">This week</span></h4><p>Chicago’s First Lady (~$57/adult), late-afternoon Jul 2 — book via <a href="https://cruise.architecture.org/" target="_blank" rel="noopener">architecture.org</a> or its official Ticketmaster page; avoid StubHub resales (not valid). Holiday weekend sells out.</p></div></label>
-      <label class="check"><input type="checkbox" data-k="c5"><div class="ct"><h4>🍽️ Reserve ROOP (Fri dinner) and Aba (Fri lunch) <span class="urg soon">This week</span></h4><p>Both on <a href="https://www.exploretock.com/aba/" target="_blank" rel="noopener">Tock</a> — Aba's Jul 3 window opened ~Jun 3 and is hard to get, so book it first (or watch cancellations); <a href="https://www.exploretock.com/roohchicago/" target="_blank" rel="noopener">ROOP</a> is the easy fallback. Note egg-free for Mom.</p></div></label>
-      <label class="check"><input type="checkbox" data-k="c6"><div class="ct"><h4>🌇 Hold Cindy’s Rooftop terrace (July-4 backup) <span class="urg soon">~14 days out</span></h4><p>Opens ~2 weeks ahead; grab a terrace seat that holds through the 10 PM show, as insurance.</p></div></label>
-      <label class="check"><input type="checkbox" data-k="c7"><div class="ct"><h4>🎨 Confirm Maya’s craft studio (Fri 2 PM) <span class="urg ok">2 weeks out</span></h4><p>Pick a pottery or candle/scent studio open Jul 3 that takes a 90-min reservation.</p></div></label>
-      <label class="check"><input type="checkbox" data-k="c8"><div class="ct"><h4>🎟️ $5 Obama Founding Membership (museum long shot) <span class="urg ok">Before Jul 1</span></h4><p>Buys the July 1 early-access window. Worst case, $5.</p></div></label>
-      <label class="check"><input type="checkbox" data-k="c9"><div class="ct"><h4>🌃 Book 360 Chicago (Sun AM) <span class="urg ok">Anytime</span></h4><p>Timed ticket for ~10:30 AM Sunday.</p></div></label>
-      <label class="check"><input type="checkbox" data-k="c10"><div class="ct"><h4>🚗 Pre-book airport SUV + July-4 evening car <span class="urg ok">Anytime</span></h4><p>Arrival pickup at O’Hare, and the hired car for the whole Fourth.</p></div></label>
-      <label class="check"><input type="checkbox" data-k="c11"><div class="ct"><h4>🌦️ Re-check weather.com Jun 28–Jul 1 <span class="urg ok">Closer in</span></h4><p>If Friday turns clear and another day turns wet, swap the cruise day. A day-of-booking flag, not a now-decision.</p></div></label>
+    <div class="callout info" style="margin:20px 0 22px">
+      <h4>ℹ️ A note on “checking availability”</h4>
+      <p>Booking sites (OpenTable, Tock, Resy) block automated checks, so I couldn’t pre-confirm exact open times. The links below jump to your date so it’s a one-tap look. <b>If a top pick is full</b>, each has a backup baked in (marked <span class="urg soon" style="display:inline">swap</span>), so the day still works. Want me to drive these live and reshuffle around what’s booked? Connect the Claude Chrome extension and I’ll do it.</p>
+    </div>
+    <div id="checks">
+      <label class="check"><input type="checkbox" data-k="r1"><div class="ct"><h4>☎️ Call City Cruises — confirm July-4 cruise food <span class="urg">Do first</span></h4><p>Egg-free hot veg item for Mom + plain item for Maya + on-the-water-at-10 PM. Then book — non-refundable, sells out.</p><div class="meta">Before booking · party 4 · ☎ 773-741-4684</div><a class="go" href="https://www.cityexperiences.com/chicago/city-cruises/4th-july-dinner-cruise-lake-michigan/" target="_blank" rel="noopener">Open cruise ↗</a></div></label>
+
+      <label class="check"><input type="checkbox" data-k="r2"><div class="ct"><h4>✈️ Book United flights — all nonstop <span class="urg">Do first</span></h4><p>Out Jul 2 (all 4); return Jul 5 — family→RDU, Vikram→SFO, both Terminal 1. Pick the nonstop on each leg; add legroom for the parents.</p><div class="meta">Jul 2 &amp; Jul 5 · party 4</div><a class="go" href="https://www.united.com/" target="_blank" rel="noopener">Open United ↗</a></div></label>
+
+      <label class="check"><input type="checkbox" data-k="r3"><div class="ct"><h4>🏨 Book hotel — Viceroy Chicago <span class="urg soon">swap-ok</span></h4><p>Request a high floor; confirm the true sleeps-4 config (or book two rooms). Alternatives: LondonHouse (value) / Langham (splurge).</p><div class="meta">Jul 2–5 · party 4 · Gold Coast</div><a class="go" href="https://www.viceroyhotelsandresorts.com/chicago" target="_blank" rel="noopener">Open Viceroy ↗</a></div></label>
+
+      <label class="check"><input type="checkbox" data-k="r4"><div class="ct"><h4>⛵ Book architecture river cruise <span class="urg soon">This week</span></h4><p>Chicago’s First Lady (~$57/adult). Book via architecture.org / official Ticketmaster — avoid StubHub resales (not valid). Holiday weekend sells out.</p><div class="meta">Thu Jul 2 ~3:30 PM · party 4</div><a class="go" href="https://cruise.architecture.org/" target="_blank" rel="noopener">Open cruise ↗</a></div></label>
+
+      <label class="check"><input type="checkbox" data-k="r5"><div class="ct"><h4>🌿 Reserve Aba (Fri lunch) <span class="urg soon">Hard table</span></h4><p>Tock, 30-day window — the Jul 3 slot opened ~Jun 3 and the rooftop goes fast. Book now or watch cancellations; ROOP is the easy fallback. Note egg-free for Mom.</p><div class="meta">Fri Jul 3 ~12:15 PM · party 4 · Tock</div><a class="go" href="https://www.exploretock.com/aba/?date=2026-07-03&amp;size=4&amp;time=12:15" target="_blank" rel="noopener">Open Aba on Tock ↗</a></div></label>
+
+      <label class="check"><input type="checkbox" data-k="r6"><div class="ct"><h4>🍛 Reserve ROOP (Fri dinner) <span class="urg soon">This week</span></h4><p>OpenTable/Tock. Note egg-free for Mom when reserving.</p><div class="meta">Fri Jul 3 ~7:00 PM · party 4</div><a class="go" href="https://www.opentable.com/r/roop-chicago?dateTime=2026-07-03T19:00&amp;covers=4" target="_blank" rel="noopener">Open ROOP ↗</a></div></label>
+
+      <label class="check"><input type="checkbox" data-k="r7"><div class="ct"><h4>🔥 Email Ignite Glass — private lesson + shipping <span class="urg soon">2 weeks out</span></h4><p>Weekday-only, and Friday is the only weekday of the trip — zero flex (backup: American Writers Museum). Arrange to ship the pieces since you fly Sunday.</p><div class="meta">Fri Jul 3 ~2:00 PM · party 4 · ✉ info@igniteglass.com</div><a class="go" href="https://igniteglass.com/experience-the-heat/" target="_blank" rel="noopener">Open Ignite ↗</a></div></label>
+
+      <label class="check"><input type="checkbox" data-k="r8"><div class="ct"><h4>🐷 Reserve The Purple Pig (arrival lunch) <span class="urg soon">swap-ok</span></h4><p>Resy — or arrive right at open (the line is notorious and you’ll be tired). Backup: Frontera Grill. Flag “no eggs, no anchovy.”</p><div class="meta">Thu Jul 2 ~12:30 PM · party 4 · Resy</div><a class="go" href="https://resy.com/cities/chicago-il/venues/the-purple-pig?date=2026-07-02&amp;seats=4" target="_blank" rel="noopener">Open Purple Pig on Resy ↗</a></div></label>
+
+      <label class="check"><input type="checkbox" data-k="r9"><div class="ct"><h4>🍕 Lou Malnati’s — call-ahead deep dish (Thu dinner) <span class="urg ok">Day-of OK</span></h4><p>Order the <b>standard</b> deep dish (egg-free dough) — no Buttercrust, no GF crust, no romano on top. Swap to Pequod’s if you’ll travel to Lincoln Park.</p><div class="meta">Thu Jul 2 ~7:00 PM · party 4 · ☎ 312-828-9800</div><a class="go" href="https://www.loumalnatis.com/menu/" target="_blank" rel="noopener">Open menu ↗</a></div></label>
+
+      <label class="check"><input type="checkbox" data-k="r10"><div class="ct"><h4>🌇 Hold Cindy’s Rooftop (July-4 backup) <span class="urg soon">~14 days out</span></h4><p>Only if the cruise food fails the phone check. Grab a terrace seat that holds through the 10 PM show.</p><div class="meta">Sat Jul 4 ~7:30 PM · party 4</div><a class="go" href="https://cindysrooftop.com/" target="_blank" rel="noopener">Open Cindy’s ↗</a></div></label>
+
+      <label class="check"><input type="checkbox" data-k="r11"><div class="ct"><h4>🎟️ $5 Obama Founding Membership <span class="urg ok">Before Jul 1</span></h4><p>Buys the July 1 early-access window for the museum interior (the long shot). The free campus is the guaranteed win.</p><div class="meta">Before Jul 1 · obama.org</div><a class="go" href="https://www.obama.org/visit/" target="_blank" rel="noopener">Open Obama ↗</a></div></label>
+
+      <label class="check"><input type="checkbox" data-k="r12"><div class="ct"><h4>🌃 Book 360 Chicago (Sun AM) <span class="urg ok">Anytime</span></h4><p>Timed ticket for ~10:30 AM Sunday; lake-facing lounge + TILT.</p><div class="meta">Sun Jul 5 ~10:30 AM · party 4</div><a class="go" href="https://360chicago.com/tickets" target="_blank" rel="noopener">Open 360 ↗</a></div></label>
+
+      <label class="check"><input type="checkbox" data-k="r13"><div class="ct"><h4>🚗 Pre-book airport SUV + July-4 evening car <span class="urg ok">2–4 weeks out</span></h4><p>Arrival meet-and-greet at O’Hare, and a ~3-hr evening block for the Navy Pier run. Get a written all-in quote with the post-fireworks wait window.</p><div class="meta">Thu Jul 2 + Sat Jul 4 eve · party 4</div></div></label>
+
+      <label class="check"><input type="checkbox" data-k="r14"><div class="ct"><h4>🚆 Verify Metra Electric July-4 schedule <span class="urg ok">Day before</span></h4><p>Obama→downtown PM. Confirm the holiday timetable + that the ~$7 weekend day pass applies (don’t assume a federal holiday = weekend fare).</p><div class="meta">Sat Jul 4 ~4 PM · Ventra/Metra app</div><a class="go" href="https://metra.com/fares" target="_blank" rel="noopener">Open Metra ↗</a></div></label>
+
+      <label class="check"><input type="checkbox" data-k="r15"><div class="ct"><h4>🌦️ Re-check weather Jun 28–Jul 1 <span class="urg ok">Closer in</span></h4><p>If Friday turns clear and another day turns wet, swap the cruise to the clearest day.</p><div class="meta">Day-of-booking flag</div><a class="go" href="https://weather.com/weather/tenday/l/Chicago+IL" target="_blank" rel="noopener">Open weather.com ↗</a></div></label>
     </div>
     <div class="btnrow"><a class="btn" href="assets/pdf/chicago-plan.pdf" target="_blank" rel="noopener">⬇️ Download the full plan (PDF)</a><button class="btn ghost" onclick="window.print()">🖨️ Print this page</button></div>
   </div>
@@ -710,27 +763,27 @@ things to confirm:
 <footer>
   <div class="wrap">
     <h3>Chicago, here we come.</h3>
-    <p style="max-width:60ch;color:#cdd8e6">Built for the four of us — comfort first, no one stuck staring at a menu, Dad at the Obama Center, and the biggest fireworks in the city’s history over the lake. The rest is just showing up.</p>
+    <p style="max-width:60ch;color:#cdd8e6">Built for the four of us — comfort first, every bite and sight a Chicago original, Dad at the Obama Center, and the biggest fireworks in the city’s history over the lake. The rest is just showing up.</p>
     <div class="cols">
       <div>
         <small>Key links</small>
         <p style="margin:.4em 0 0;line-height:2">
           <a href="https://www.obama.org/visit/" target="_blank" rel="noopener">Obama Center</a> ·
           <a href="https://www.cityexperiences.com/chicago/city-cruises/4th-july-dinner-cruise-lake-michigan/" target="_blank" rel="noopener">Fireworks cruise</a> ·
-          <a href="https://www.architecture.org/" target="_blank" rel="noopener">Architecture cruise</a> ·
-          <a href="https://360chicago.com/" target="_blank" rel="noopener">360 Chicago</a><br>
-          <a href="https://www.hilton.com/en/hotels/chirees-embassy-suites-chicago-downtown-magnificent-mile/" target="_blank" rel="noopener">Embassy Suites</a> ·
-          <a href="https://navypier.org/eat-drink-and-play/fireworks/" target="_blank" rel="noopener">Navy Pier fireworks</a> ·
-          <a href="https://wndrmuseum.com/" target="_blank" rel="noopener">WNDR</a>
+          <a href="https://cruise.architecture.org/" target="_blank" rel="noopener">Architecture cruise</a> ·
+          <a href="https://igniteglass.com/experience-the-heat/" target="_blank" rel="noopener">Ignite Glass</a><br>
+          <a href="https://www.viceroyhotelsandresorts.com/chicago" target="_blank" rel="noopener">Viceroy hotel</a> ·
+          <a href="https://thepurplepigchicago.com/" target="_blank" rel="noopener">The Purple Pig</a> ·
+          <a href="https://360chicago.com/" target="_blank" rel="noopener">360 Chicago</a>
         </p>
       </div>
       <div>
         <small>Phone, when you need it</small>
-        <p style="margin:.4em 0 0;line-height:2">City Cruises · 773-741-4684<br>Obama Center · 773-900-0044<br>Lou Malnati’s (River North) · 312-828-9800<br>ROOP · 312-809-6964</p>
+        <p style="margin:.4em 0 0;line-height:2">City Cruises · 773-741-4684<br>Obama Center · 773-900-0044<br>Lou Malnati’s · 312-828-9800<br>ROOP · 312-809-6964</p>
       </div>
       <div>
         <small>Good to know</small>
-        <p style="margin:.4em 0 0;line-height:1.7">Pack light layers (AC + boat breeze) and a compact umbrella for Fri/Sun. Driver and restaurant tips sit in the buffer. Prices and forecasts are planning estimates — re-check the weather Jun 28–Jul 1 and confirm rates at booking. Verified to mid-June 2026.</p>
+        <p style="margin:.4em 0 0;line-height:1.7">Pack light layers (AC + boat breeze) and a compact umbrella for Fri/Sun. Tips sit in the buffer. Prices and forecasts are planning estimates — re-check the weather Jun 28–Jul 1 and confirm rates at booking. Verified to mid-June 2026.</p>
       </div>
     </div>
   </div>
@@ -751,8 +804,8 @@ function showDay(n){
 tabs.forEach(t=>t.addEventListener('click',()=>showDay(t.dataset.day)));
 window.showDay=showDay;
 
-// checklist persistence
-const KEY='chi26-checks';
+// reservation checklist persistence
+const KEY='chi26-reserve';
 let saved={};
 try{saved=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
 document.querySelectorAll('#checks input').forEach(cb=>{
